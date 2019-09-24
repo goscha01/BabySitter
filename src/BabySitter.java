@@ -1,5 +1,5 @@
 public class BabySitter {
-    public String duration(Integer total) {
-        return total.toString();
+    public String duration(Integer totalTime) {
+        return totalTime.toString();
     }
 }
