@@ -48,5 +48,11 @@ public class BabySitterTest {
         assertEquals(2, timeFrame.intoInteger("2"));
     }
 
+    @Test
+    public void whenPassAArrayIndexReturnsANumber(){
+        TimeFrame timeFrame = new TimeFrame ();
+        assertEquals(2, timeFrame.startTime(2));
+    }
+
 
 }
