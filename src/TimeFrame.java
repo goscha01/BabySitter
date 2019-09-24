@@ -70,4 +70,25 @@ public class TimeFrame {
         }
         return index;
     }
+
+    public int lateRateTime(String lateRateLimit) {
+        int j=0;
+        int index = 0;
+        while (j<TIME_SPAN_STR.length){
+            if (TIME_SPAN_STR[j] == lateRateLimit) {
+                if (j>=0){
+                    return index = TIME_SPAN_STR.length -1 - j;
+                }
+                else{
+                    return index = 0;
+                }
+            }
+            else{
+                j+=1;
+            }
+
+        }
+        return index;
+    }
+
 }
