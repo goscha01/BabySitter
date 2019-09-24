@@ -51,4 +51,7 @@ public class TimeFrame {
         return j;
     }
 
+    public int earlyRateTime(int earlyRateLimit) {
+        return earlyRateLimit-2;
+    }
 }
