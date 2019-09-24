@@ -17,5 +17,19 @@ public class BabySitterTest {
         assertEquals(2,babySitter.duration(2));
     }
 
+    @Test
+    public void whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree(){
+        BabySitter babySitter = new BabySitter();
+        assertEquals(3,babySitter.result(1));
+        assertEquals(6,babySitter.result(2));
+    }
+
+    @Test
+    public void whenPassTwoNumbersReturnsAMultiplication(){
+        BabySitter babySitter = new BabySitter();
+        assertEquals(3,babySitter.totalResult(1,3));
+
+    }
+
 
 }
