@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            <state relative-caret-position="132">
+              <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="118">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
                 <element signature="e#159#160#0" expanded="true" />
                 <element signature="e#191#192#0" expanded="true" />
@@ -42,6 +42,8 @@
                 <element signature="e#184#185#0" expanded="true" />
                 <element signature="e#220#221#0" expanded="true" />
                 <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BabySitterTest.whenPassTwoNumbersReturnsAMultiplication">
+  <component name="RunManager" selected="JUnit.BabySitterTest.whenPassStartTimeAndFinishTimeReturnsDifferance">
     <configuration name="BabySitterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="PACKAGE_NAME" value="" />
@@ -167,21 +169,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BabySitterTest.whenPassANumberTwoBabySitterReturnsANumberTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BabySitterTest" />
-      <option name="METHOD_NAME" value="whenPassANumberTwoBabySitterReturnsANumberTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BabySitterTest.whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BabySitterTest" />
       <option name="METHOD_NAME" value="whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BabySitterTest.whenPassStartTimeAndFinishTimeReturnsDifferance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BabySitterTest" />
+      <option name="METHOD_NAME" value="whenPassStartTimeAndFinishTimeReturnsDifferance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BabySitterTest.whenPassStartTimeAndFinishTimeReturnsDifferance" />
         <item itemvalue="JUnit.BabySitterTest.whenPassTwoNumbersReturnsAMultiplication" />
         <item itemvalue="JUnit.BabySitterTest.whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree" />
         <item itemvalue="JUnit.BabySitterTest" />
         <item itemvalue="JUnit.BabySitterTest.whenBabysitterIsPassedAMultipleOfThreeItReturnsANumberMultipliedByThree" />
-        <item itemvalue="JUnit.BabySitterTest.whenPassANumberTwoBabySitterReturnsANumberTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +250,9 @@
     <history-entry file="BabySitterTest_whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree - 2019.09.24 at 15h 53m 51s.xml">
       <configuration name="BabySitterTest.whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BabySitterTest_whenPassTwoNumbersReturnsAMultiplication - 2019.09.24 at 15h 59m 08s.xml">
+      <configuration name="BabySitterTest.whenPassTwoNumbersReturnsAMultiplication" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="238" y="95" width="1326" height="587" extended-state="0" />
@@ -258,7 +263,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25750396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25750396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Dependency Viewer" weight="0.32967034" />
       <window_info anchor="bottom" id="Version Control" />
@@ -267,7 +272,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -332,8 +337,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="118">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
             <element signature="e#159#160#0" expanded="true" />
             <element signature="e#191#192#0" expanded="true" />
@@ -341,14 +346,16 @@
             <element signature="e#184#185#0" expanded="true" />
             <element signature="e#220#221#0" expanded="true" />
             <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="132">
+          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

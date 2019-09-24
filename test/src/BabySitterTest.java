@@ -28,7 +28,12 @@ public class BabySitterTest {
     public void whenPassTwoNumbersReturnsAMultiplication(){
         BabySitter babySitter = new BabySitter();
         assertEquals(3,babySitter.totalResult(1,3));
-
+    }
+    
+    @Test
+    public void whenPassStartTimeAndFinishTimeReturnsDifferance (){
+        BabySitter babySitter = new BabySitter();
+        assertEquals(5, babySitter.timeCalculation(5,10));
     }
 
 

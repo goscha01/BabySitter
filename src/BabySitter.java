@@ -12,4 +12,8 @@ public class BabySitter {
     public int totalResult(int totalTime, int cost) {
         return totalTime * cost;
     }
+
+    public int timeCalculation(int startTime, int finishTime) {
+        return finishTime - startTime;
+    }
 }
