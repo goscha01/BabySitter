@@ -1,5 +1,7 @@
 public class BabySitter {
 
+    int totalTime;
+
 
     public int duration(int totalTime) {
         return totalTime;
@@ -14,6 +16,6 @@ public class BabySitter {
     }
 
     public int timeCalculation(int startTime, int finishTime) {
-        return finishTime - startTime;
+        return totalTime = finishTime - startTime;
     }
 }
