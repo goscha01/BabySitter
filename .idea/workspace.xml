@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4c38b4-917c-4c46-8f1f-5ed80b6e1368" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/TimeFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/BabySitterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/BabySitterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,13 +18,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+              <folding>
+                <element signature="e#72#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state relative-caret-position="204">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#159#160#0" expanded="true" />
                 <element signature="e#191#192#0" expanded="true" />
@@ -42,7 +55,7 @@
                 <element signature="e#220#221#0" expanded="true" />
                 <element signature="e#258#259#0" expanded="true" />
                 <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,12 +85,13 @@
         <option value="$PROJECT_DIR$/test/src/BabySitter.java" />
         <option value="$PROJECT_DIR$/src/BabySitter.java" />
         <option value="$PROJECT_DIR$/test/src/BabySitterTest.java" />
+        <option value="$PROJECT_DIR$/src/TimeFrame.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="238" />
-    <option name="y" value="95" />
+    <option name="x" value="399" />
+    <option name="y" value="113" />
     <option name="width" value="1326" />
     <option name="height" value="587" />
   </component>
@@ -148,21 +162,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BabySitterTest.whenPassStartTimeFinishTimeAndPriceReturnsTotalPrice">
-    <configuration name="BabySitterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BabySitterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BabySitterTest.whenPassStartAsAStringItReturnsAsANumber">
     <configuration name="BabySitterTest.whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BabySitterTest" />
       <option name="METHOD_NAME" value="whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BabySitterTest.whenPassStartAsAStringItReturnsAsANumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BabySitterTest" />
+      <option name="METHOD_NAME" value="whenPassStartAsAStringItReturnsAsANumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -200,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BabySitterTest.whenPassStartAsAStringItReturnsAsANumber" />
         <item itemvalue="JUnit.BabySitterTest.whenPassStartTimeFinishTimeAndPriceReturnsTotalPrice" />
         <item itemvalue="JUnit.BabySitterTest.whenPassStartTimeAndFinishTimeReturnsDifferance" />
         <item itemvalue="JUnit.BabySitterTest.whenPassTwoNumbersReturnsAMultiplication" />
         <item itemvalue="JUnit.BabySitterTest.whenPassPassAMultiplierOfThreeReturnsANamberMultipliedOnThree" />
-        <item itemvalue="JUnit.BabySitterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -222,9 +237,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BabySitterTest_whenPassANumberBabySitterReturnsANumber - 2019.09.24 at 13h 00m 30s.xml">
-      <configuration name="BabySitterTest.whenPassANumberBabySitterReturnsANumber" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BabySitterTest_whenPassANumberTwoBabySitterReturnsANumberTwo - 2019.09.24 at 13h 03m 32s.xml">
       <configuration name="BabySitterTest.whenPassANumberTwoBabySitterReturnsANumberTwo" configurationId="JUnit" />
     </history-entry>
@@ -251,6 +263,9 @@
     </history-entry>
     <history-entry file="BabySitterTest_whenPassStartTimeAndFinishTimeReturnsDifferance - 2019.09.24 at 16h 06m 21s.xml">
       <configuration name="BabySitterTest.whenPassStartTimeAndFinishTimeReturnsDifferance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassStartTimeFinishTimeAndPriceReturnsTotalPrice - 2019.09.24 at 16h 15m 12s.xml">
+      <configuration name="BabySitterTest.whenPassStartTimeFinishTimeAndPriceReturnsTotalPrice" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -285,6 +300,17 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TimeFrame.java</url>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/github/goscha01/BabySitter.java">
@@ -336,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="204">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#159#160#0" expanded="true" />
             <element signature="e#191#192#0" expanded="true" />
@@ -346,7 +372,7 @@
             <element signature="e#220#221#0" expanded="true" />
             <element signature="e#258#259#0" expanded="true" />
             <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -354,9 +380,19 @@
     <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding>
+            <element signature="e#72#73#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -42,5 +42,11 @@ public class BabySitterTest {
         assertEquals(25, babySitter.totalResult(5,5));
     }
 
+    @Test
+    public void whenPassStartAsAStringItReturnsAsANumber(){
+        TimeFrame timeFrame = new TimeFrame ();
+        assertEquals(2, timeFrame.intoInteger("2"));
+    }
+
 
 }
