@@ -53,15 +53,21 @@ public class TimeFrame {
 
     public int earlyRateTime(String earlyRateLimit) {
         int j=0;
-        int index;
-        while (j<TIME_SPAN_STR.length-1){
+        int index = 0;
+        while (j<TIME_SPAN_STR.length){
             if (TIME_SPAN_STR[j] == earlyRateLimit) {
-                return  j-1;
+                if (j>0){
+                    return index = j;
+                }
+                else{
+                    return index = 0;
+                }
             }
             else{
                 j+=1;
             }
+
         }
-        return j;
+        return index;
     }
 }

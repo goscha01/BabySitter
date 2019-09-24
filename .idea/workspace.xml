@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
+            <state relative-caret-position="244">
+              <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+            <state relative-caret-position="51">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
               <folding>
                 <element signature="e#72#73#0" expanded="true" />
                 <element signature="e#101#102#0" expanded="true" />
@@ -46,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="374">
               <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding>
                 <element signature="e#159#160#0" expanded="true" />
@@ -85,8 +85,8 @@
         <option value="$PROJECT_DIR$/src/com/github/goscha01/BabySitter.java" />
         <option value="$PROJECT_DIR$/test/src/BabySitter.java" />
         <option value="$PROJECT_DIR$/src/BabySitter.java" />
-        <option value="$PROJECT_DIR$/test/src/BabySitterTest.java" />
         <option value="$PROJECT_DIR$/src/TimeFrame.java" />
+        <option value="$PROJECT_DIR$/test/src/BabySitterTest.java" />
       </list>
     </option>
   </component>
@@ -237,34 +237,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BabySitterTest_whenPassAStringArrayIndexReturnsANumber - 2019.09.24 at 17h 54m 39s.xml">
-      <configuration name="BabySitterTest.whenPassAStringArrayIndexReturnsANumber" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 15m 07s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassAStringArrayIndexReturnsANumber - 2019.09.24 at 17h 55m 04s.xml">
-      <configuration name="BabySitterTest.whenPassAStringArrayIndexReturnsANumber" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 15m 40s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassAStringArrayIndexReturnsANumber - 2019.09.24 at 17h 55m 50s.xml">
-      <configuration name="BabySitterTest.whenPassAStringArrayIndexReturnsANumber" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 17m 35s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassAStringArrayIndexReturnsANumberOfFinish - 2019.09.24 at 18h 00m 24s.xml">
-      <configuration name="BabySitterTest.whenPassAStringArrayIndexReturnsANumberOfFinish" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 20m 40s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest - 2019.09.24 at 18h 06m 44s.xml">
-      <configuration name="BabySitterTest" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 21m 15s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest - 2019.09.24 at 18h 07m 53s.xml">
-      <configuration name="BabySitterTest" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 22m 35s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassAStringArrayIndexReturnsANumberOfFinish - 2019.09.24 at 18h 08m 40s.xml">
-      <configuration name="BabySitterTest.whenPassAStringArrayIndexReturnsANumberOfFinish" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 24m 07s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassAStringArrayIndexReturnsANumberOfFinish - 2019.09.24 at 18h 34m 47s.xml">
-      <configuration name="BabySitterTest.whenPassAStringArrayIndexReturnsANumberOfFinish" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 25m 43s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassStartTimeAndFinishTimeStringsReturnsDifferanceNumber - 2019.09.24 at 18h 35m 03s.xml">
-      <configuration name="BabySitterTest.whenPassStartTimeAndFinishTimeStringsReturnsDifferanceNumber" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 26m 54s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 18h 49m 31s.xml">
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 19h 30m 40s.xml">
       <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -300,6 +300,20 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/src/BabySitterTest.java</url>
+          <line>75</line>
+          <properties class="BabySitterTest" method="whenPassAnIndexCalculateTotalTimeBeforeIt">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/github/goscha01/BabySitter.java">
@@ -397,7 +411,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="374">
           <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding>
             <element signature="e#159#160#0" expanded="true" />
@@ -414,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        <state relative-caret-position="51">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
           <folding>
             <element signature="e#72#73#0" expanded="true" />
             <element signature="e#101#102#0" expanded="true" />
@@ -425,8 +439,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
+        <state relative-caret-position="244">
+          <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -75,9 +75,9 @@ public class BabySitterTest {
     @Test
     public void whenPassAnIndexCalculateTotalTimeBeforeIt(){
         TimeFrame timeFrame = new TimeFrame();
-        assertEquals(5, timeFrame.earlyRateTime("11PM"));
-        //assertEquals(5, timeFrame.earlyRateTime(7));
-        //assertEquals(5, timeFrame.earlyRateTime(7));
+        assertEquals(6, timeFrame.earlyRateTime("11PM"));
+        assertEquals(0, timeFrame.earlyRateTime("5PM"));
+        assertEquals(11, timeFrame.earlyRateTime("4AM"));
     }
 
 
