@@ -19,4 +19,19 @@ public class TimeFrame {
         return j;
 
     }
+
+    public int startTimeStr(String start) {
+        String [] timeSpanStr = {"4PM","5PM", "6PM", "7PM", "8PM"};
+        int j=0;
+        int index;
+        while (j<timeSpanStr.length-1){
+            if (timeSpanStr[j] == start) {
+                return  j+1;
+            }
+            else{
+                j+=1;
+            }
+        }
+        return j;
+    }
 }
