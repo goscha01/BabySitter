@@ -55,9 +55,15 @@ public class BabySitterTest {
     }
 
     @Test
-    public void whenPassAStringArrayIndexReturnsANumber(){
+    public void whenPassAStringArrayIndexReturnsANumberOfStart(){
         TimeFrame timeFrame = new TimeFrame ();
         assertEquals(2, timeFrame.startTimeStr("5PM"));
+    }
+
+    @Test
+    public void whenPassAStringArrayIndexReturnsANumberOfFinish(){
+        TimeFrame timeFrame = new TimeFrame ();
+        assertEquals(4, timeFrame.finishTimeStr("7PM"));
     }
 
 
