@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+            <state relative-caret-position="272">
+              <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,13 +33,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+            <state relative-caret-position="244">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding>
                 <element signature="e#72#73#0" expanded="true" />
                 <element signature="e#101#102#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1299#1300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,8 +85,8 @@
         <option value="$PROJECT_DIR$/src/com/github/goscha01/BabySitter.java" />
         <option value="$PROJECT_DIR$/test/src/BabySitter.java" />
         <option value="$PROJECT_DIR$/src/BabySitter.java" />
-        <option value="$PROJECT_DIR$/src/TimeFrame.java" />
         <option value="$PROJECT_DIR$/test/src/BabySitterTest.java" />
+        <option value="$PROJECT_DIR$/src/TimeFrame.java" />
       </list>
     </option>
   </component>
@@ -239,9 +237,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BabySitterTest_whenPassAArrayIndexReturnsANumber - 2019.09.24 at 17h 38m 42s.xml">
-      <configuration name="BabySitterTest.whenPassAArrayIndexReturnsANumber" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BabySitterTest_whenPassAStringArrayIndexReturnsANumber - 2019.09.24 at 17h 54m 39s.xml">
       <configuration name="BabySitterTest.whenPassAStringArrayIndexReturnsANumber" configurationId="JUnit" />
     </history-entry>
@@ -268,6 +263,9 @@
     </history-entry>
     <history-entry file="BabySitterTest_whenPassStartTimeAndFinishTimeStringsReturnsDifferanceNumber - 2019.09.24 at 18h 35m 03s.xml">
       <configuration name="BabySitterTest.whenPassStartTimeAndFinishTimeStringsReturnsDifferanceNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassAnIndexCalculateTotalTimeBeforeIt - 2019.09.24 at 18h 49m 31s.xml">
+      <configuration name="BabySitterTest.whenPassAnIndexCalculateTotalTimeBeforeIt" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -416,21 +414,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="244">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
           <folding>
             <element signature="e#72#73#0" expanded="true" />
             <element signature="e#101#102#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+        <state relative-caret-position="272">
+          <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
