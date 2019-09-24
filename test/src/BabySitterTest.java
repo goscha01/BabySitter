@@ -66,5 +66,12 @@ public class BabySitterTest {
         assertEquals(3, timeFrame.finishTimeStr("7PM"));
     }
 
+    @Test
+    public void whenPassStartTimeAndFinishTimeStringsReturnsDifferanceNumber (){
+        BabySitter babySitter = new BabySitter();
+        assertEquals(5, babySitter.timeCalculationStr("5PM","10PM"));
+    }
+
+
 
 }

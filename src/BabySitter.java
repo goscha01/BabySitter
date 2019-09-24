@@ -18,4 +18,14 @@ public class BabySitter {
     public int timeCalculation(int startTime, int finishTime) {
         return totalTime = finishTime - startTime;
     }
+
+    public int timeCalculationStr(String start, String finish) {
+        TimeFrame timeFrame = new TimeFrame();
+        int startTime = timeFrame.startTimeStr(start);
+        int finishTime = timeFrame.finishTimeStr(finish);
+        totalTime = finishTime - startTime;
+        return totalTime;
+
+
+    }
 }
