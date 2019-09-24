@@ -57,13 +57,13 @@ public class BabySitterTest {
     @Test
     public void whenPassAStringArrayIndexReturnsANumberOfStart(){
         TimeFrame timeFrame = new TimeFrame ();
-        assertEquals(2, timeFrame.startTimeStr("5PM"));
+        assertEquals(1, timeFrame.startTimeStr("5PM"));
     }
 
     @Test
     public void whenPassAStringArrayIndexReturnsANumberOfFinish(){
         TimeFrame timeFrame = new TimeFrame ();
-        assertEquals(4, timeFrame.finishTimeStr("7PM"));
+        assertEquals(3, timeFrame.finishTimeStr("7PM"));
     }
 
 

@@ -1,5 +1,8 @@
 public class TimeFrame {
 
+    public static final String[] TIME_SPAN_STR = new String[]{"5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM",
+    "12AM", "1AM", "2AM", "3AM", "4AM"};
+
     public int intoInteger(String inputStart) {
         return Integer.parseInt(inputStart);
     }
@@ -21,11 +24,10 @@ public class TimeFrame {
     }
 
     public int startTimeStr(String start) {
-        String [] timeSpanStr = {"4PM","5PM", "6PM", "7PM", "8PM"};
         int j=0;
         int index;
-        while (j<timeSpanStr.length-1){
-            if (timeSpanStr[j] == start) {
+        while (j< TIME_SPAN_STR.length-1){
+            if (TIME_SPAN_STR[j] == start) {
                 return  j+1;
             }
             else{
@@ -36,11 +38,10 @@ public class TimeFrame {
     }
 
     public int finishTimeStr(String finish) {
-        String [] timeSpanStr = {"4PM","5PM", "6PM", "7PM", "8PM"};
         int j=0;
         int index;
-        while (j<timeSpanStr.length-1){
-            if (timeSpanStr[j] == finish) {
+        while (j<TIME_SPAN_STR.length-1){
+            if (TIME_SPAN_STR[j] == finish) {
                 return  j+1;
             }
             else{
