@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import static javax.swing.text.StyleConstants.Family;
 import static junit.framework.TestCase.assertEquals;
 
 public class BabySitterTest {
@@ -95,6 +96,12 @@ public class BabySitterTest {
         assertEquals(11, timeFrame.BetwenRateTime("5PM","4AM"));
         assertEquals(0, timeFrame.BetwenRateTime("4AM", "4AM"));
         assertEquals(0, timeFrame.BetwenRateTime("5PM", "5PM"));
+    }
+
+    @Test
+    public void passAnEarlyRateFamilyReturnsEarlyRate(){
+        Family family = new Family();
+        assertEquals(1,family.rate(1));
     }
 
 }
