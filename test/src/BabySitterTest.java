@@ -73,7 +73,7 @@ public class BabySitterTest {
     }
 
     @Test
-    public void whenPassAnIndexCalculateTotalTimeBeforeIt(){
+    public void whenPassAnArrayValueCalculatesTotalTimeBeforeIt(){
         TimeFrame timeFrame = new TimeFrame();
         assertEquals(6, timeFrame.earlyRateTime("11PM"));
         assertEquals(0, timeFrame.earlyRateTime("5PM"));
@@ -81,11 +81,20 @@ public class BabySitterTest {
     }
 
     @Test
-    public void whenPassAnIndexCalculateTotalTimeAfterIt(){
+    public void whenPassAnArrayValueCalculatesTotalTimeAfterIt(){
         TimeFrame timeFrame = new TimeFrame();
         assertEquals(5, timeFrame.lateRateTime("11PM"));
         assertEquals(11, timeFrame.lateRateTime("5PM"));
         assertEquals(0, timeFrame.lateRateTime("4AM"));
+    }
+
+    @Test
+    public void whenPassTwoArrayValuesCalculatesTotalTimeBetweenThem(){
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(5, timeFrame.BetwenRateTime("6PM", "11PM"));
+        assertEquals(11, timeFrame.BetwenRateTime("5PM","4AM"));
+        assertEquals(0, timeFrame.BetwenRateTime("4AM", "4AM"));
+        assertEquals(0, timeFrame.BetwenRateTime("5PM", "5PM"));
     }
 
 }

@@ -53,14 +53,13 @@ public class TimeFrame {
 
     public int earlyRateTime(String earlyRateLimit) {
         int j=0;
-        int index = 0;
-        while (j<TIME_SPAN_STR.length){
+        while (j<TIME_SPAN_STR.length-1){
             if (TIME_SPAN_STR[j] == earlyRateLimit) {
                 if (j>0){
-                    return index = j;
+                    return j;
                 }
                 else{
-                    return index = 0;
+                    return  0;
                 }
             }
             else{
@@ -68,19 +67,19 @@ public class TimeFrame {
             }
 
         }
-        return index;
+        return j;
     }
 
     public int lateRateTime(String lateRateLimit) {
         int j=0;
-        int index = 0;
-        while (j<TIME_SPAN_STR.length){
+        while (j<=TIME_SPAN_STR.length-1){
             if (TIME_SPAN_STR[j] == lateRateLimit) {
-                if (j>=0){
-                    return index = TIME_SPAN_STR.length -1 - j;
+                if (j<0){
+                    return 0;
                 }
                 else{
-                    return index = 0;
+
+                    return TIME_SPAN_STR.length -1  - j;
                 }
             }
             else{
@@ -88,7 +87,10 @@ public class TimeFrame {
             }
 
         }
-        return index;
+        return j;
     }
 
+    public int BetwenRateTime(String earlyRateLimit, String lateRateLimit) {
+        return TIME_SPAN_STR.length-1 - lateRateTime(lateRateLimit)-earlyRateTime(earlyRateLimit);
+    }
 }
