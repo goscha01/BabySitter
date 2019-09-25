@@ -93,4 +93,8 @@ public class TimeFrame {
     public int BetwenRateTime(String earlyRateLimit, String lateRateLimit) {
         return TIME_SPAN_STR.length-1 - lateRateTime(lateRateLimit)-earlyRateTime(earlyRateLimit);
     }
+
+    public int calculateAllTime(String earlyRateLimit, String lateRateLimit) {
+        return earlyRateTime(earlyRateLimit) + lateRateTime(lateRateLimit) + BetwenRateTime(earlyRateLimit, lateRateLimit);
+    }
 }

@@ -25,7 +25,18 @@ public class BabySitter {
         int finishTime = timeFrame.finishTimeStr(finish);
         totalTime = finishTime - startTime;
         return totalTime;
-
-
     }
+
+    public int rateTimeCalculation(int rate, String earleRateLimit) {
+        TimeFrame timeFrame = new TimeFrame();
+        return timeFrame.earlyRateTime(earleRateLimit)* rate;
+       }
+
+    public int totalRateTimeCalculation(int rate, String earleRateLimit, String lateRateLimit) {
+        TimeFrame timeFrame = new TimeFrame();
+        return timeFrame.earlyRateTime(earleRateLimit)* rate +
+                timeFrame.lateRateTime(lateRateLimit)* rate +
+                timeFrame.BetwenRateTime(earleRateLimit, lateRateLimit) * rate;
+    }
+
 }

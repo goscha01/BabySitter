@@ -104,4 +104,24 @@ public class BabySitterTest {
         assertEquals(1,family.rate(1));
     }
 
+    @Test
+    public void whenPassARateBabySitterCalculatesriceForEarlyRateTime(){
+        BabySitter babySitter = new BabySitter();
+        assertEquals(5,babySitter.rateTimeCalculation(5,"6PM"));
+    }
+
+    @Test
+    public void whenPassARateBabySitterCalculatrsASummOfMultiplications(){
+        BabySitter babySitter = new BabySitter();
+        assertEquals(25,babySitter.totalRateTimeCalculation(5,"6PM","11PM"));
+    }
+
+    @Test
+    public void whenAddAllTimeRatesReceive11() {
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(11, timeFrame.calculateAllTime("6PM", "2AM"));
+        assertEquals(11, timeFrame.calculateAllTime("6PM", "11PM"));
+        assertEquals(11, timeFrame.calculateAllTime("5PM", "4AM"));
+    }
+
 }
