@@ -96,5 +96,10 @@ public class TimeFrame {
 
     public int calculateAllTime(String earlyRateLimit, String lateRateLimit) {
         return earlyRateTime(earlyRateLimit) + lateRateTime(lateRateLimit) + BetwenRateTime(earlyRateLimit, lateRateLimit);
+}
+
+    public int calculateAllTimeMltRate(int rate, String earlyRateLimit, String lateRateLimit) {
+        return earlyRateTime(earlyRateLimit)*rate + lateRateTime(lateRateLimit)*rate + BetwenRateTime(earlyRateLimit, lateRateLimit)*rate;
+
     }
 }

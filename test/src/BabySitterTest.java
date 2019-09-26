@@ -110,11 +110,6 @@ public class BabySitterTest {
         assertEquals(5,babySitter.rateTimeCalculation(5,"6PM"));
     }
 
-    @Test
-    public void whenPassARateBabySitterCalculatrsASummOfMultiplications(){
-        BabySitter babySitter = new BabySitter();
-        assertEquals(25,babySitter.totalRateTimeCalculation(5,"6PM","11PM"));
-    }
 
     @Test
     public void whenAddAllTimeRatesReceive11() {
@@ -122,6 +117,21 @@ public class BabySitterTest {
         assertEquals(11, timeFrame.calculateAllTime("6PM", "2AM"));
         assertEquals(11, timeFrame.calculateAllTime("6PM", "11PM"));
         assertEquals(11, timeFrame.calculateAllTime("5PM", "4AM"));
+    }
+
+    @Test
+    public void whenAddAllTimeandMultiplyEachWith5Receive55(){
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(55, timeFrame.calculateAllTimeMltRate(5,"6PM", "2AM"));
+        assertEquals(55, timeFrame.calculateAllTimeMltRate(5,"6PM", "11PM"));
+        assertEquals(55, timeFrame.calculateAllTimeMltRate(5,"5PM", "4AM"));
+    }
+
+
+    @Test
+    public void whenPassThreeDifferantRatesBabySitterCalculatsASummOfMultiplications(){
+        BabySitter babySitter = new BabySitter();
+        assertEquals(70,babySitter.totalFamalyRateTimeCalculation(5,6,7,"6PM","11PM"));
     }
 
 }

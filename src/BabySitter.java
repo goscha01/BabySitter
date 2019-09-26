@@ -39,4 +39,10 @@ public class BabySitter {
                 timeFrame.BetwenRateTime(earleRateLimit, lateRateLimit) * rate;
     }
 
+    public int totalFamalyRateTimeCalculation(int earlyRate, int betweenRate, int lateRate, String earleRateLimit, String lateRateLimit) {
+        TimeFrame timeFrame = new TimeFrame();
+        return timeFrame.earlyRateTime(earleRateLimit)* earlyRate +
+                timeFrame.lateRateTime(lateRateLimit)* lateRate +
+                timeFrame.BetwenRateTime(earleRateLimit, lateRateLimit) * betweenRate;
+    }
 }
