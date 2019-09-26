@@ -71,6 +71,7 @@ public class BabySitterTest {
     public void whenPassStartTimeAndFinishTimeStringsReturnsDifferanceNumber (){
         BabySitter babySitter = new BabySitter();
         assertEquals(5, babySitter.timeCalculationStr("5PM","10PM"));
+        assertEquals(8, babySitter.timeCalculationStr("6PM","2AM"));
     }
 
     @Test
@@ -132,6 +133,12 @@ public class BabySitterTest {
     public void whenPassThreeDifferantRatesBabySitterCalculatsASummOfMultiplications(){
         BabySitter babySitter = new BabySitter();
         assertEquals(70,babySitter.totalFamalyRateTimeCalculation(5,6,7,"6PM","11PM"));
+    }
+
+    @Test
+    public void whenPassStartAndFinishTimeReturnsNewArrayAndItsLength(){
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(8, timeFrame.newArray ("6PM","2AM"));
     }
 
 }

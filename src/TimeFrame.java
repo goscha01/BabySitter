@@ -102,4 +102,24 @@ public class TimeFrame {
         return earlyRateTime(earlyRateLimit)*rate + lateRateTime(lateRateLimit)*rate + BetwenRateTime(earlyRateLimit, lateRateLimit)*rate;
 
     }
+
+    public void totalCalculatedTime(String start, String finish) {
+
+    }
+
+    public int newArray(String start, String finish) {
+        BabySitter babySitter = new BabySitter();
+        int arrayLenght = babySitter.timeCalculationStr(start, finish);
+        int j = startTimeStr(start);
+        String timeArray [] = new String [arrayLenght];
+        int i=0;
+        while (j<arrayLenght){
+            timeArray [i] = TIME_SPAN_STR [j];
+            i+=1;
+            j+=1;
+
+        }
+        return timeArray.length;
+
+    }
 }
