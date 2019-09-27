@@ -6,9 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e4c38b4-917c-4c46-8f1f-5ed80b6e1368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BabySitter/TimeFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BabySitter/TimeFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/BabySitterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/BabySitterTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TimeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/BabySitterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/BabySitterTest.java" afterDir="false" />
     </list>
@@ -27,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="163" column="43" selection-start-line="163" selection-start-column="43" selection-end-line="163" selection-end-column="43" />
+            <state relative-caret-position="414">
+              <caret line="175" column="22" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="159" selection-start-line="159" selection-end-line="159" />
+            <state relative-caret-position="159">
+              <caret line="145" column="55" lean-forward="true" selection-start-line="145" selection-start-column="55" selection-end-line="145" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -88,8 +85,8 @@
         <option value="$PROJECT_DIR$/src/Famaly.java" />
         <option value="$PROJECT_DIR$/src/Family.java" />
         <option value="$PROJECT_DIR$/src/BabySitter.java" />
-        <option value="$PROJECT_DIR$/src/TimeFrame.java" />
         <option value="$PROJECT_DIR$/test/src/BabySitterTest.java" />
+        <option value="$PROJECT_DIR$/src/TimeFrame.java" />
       </list>
     </option>
   </component>
@@ -219,8 +216,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BabySitterTest.whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray" />
-        <item itemvalue="JUnit.BabySitterTest.whenPassStartAndFinishTimeReturnsNewArrayString" />
         <item itemvalue="JUnit.BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" />
+        <item itemvalue="JUnit.BabySitterTest.whenPassStartAndFinishTimeReturnsNewArrayString" />
         <item itemvalue="JUnit.BabySitterTest.whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt" />
         <item itemvalue="JUnit.BabySitterTest" />
       </list>
@@ -240,35 +237,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BabySitterTest_whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt - 2019.09.27 at 17h 41m 45s.xml">
-      <configuration name="BabySitterTest.whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt - 2019.09.27 at 17h 43m 09s.xml">
-      <configuration name="BabySitterTest.whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 17h 55m 00s.xml">
-      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 17h 55m 36s.xml">
-      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 18h 04m 06s.xml">
-      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassStartAndFinishTimeReturnsNewArrayString - 2019.09.27 at 18h 04m 25s.xml">
-      <configuration name="BabySitterTest.whenPassStartAndFinishTimeReturnsNewArrayString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 18h 18m 05s.xml">
-      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray - 2019.09.27 at 18h 38m 12s.xml">
+    <history-entry file="BabySitterTest_whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray - 2019.09.27 at 18h 45m 57s.xml">
       <configuration name="BabySitterTest.whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassStartAndFinishTimeReturnsNewArrayString - 2019.09.27 at 18h 38m 58s.xml">
-      <configuration name="BabySitterTest.whenPassStartAndFinishTimeReturnsNewArrayString" configurationId="JUnit" />
+    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 18h 49m 20s.xml">
+      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BabySitterTest_whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray - 2019.09.27 at 18h 39m 07s.xml">
+    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 18h 58m 14s.xml">
+      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 18h 59m 03s.xml">
+      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 18h 59m 56s.xml">
+      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 19h 00m 18s.xml">
+      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray - 2019.09.27 at 19h 01m 56s.xml">
       <configuration name="BabySitterTest.whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray - 2019.09.27 at 19h 02m 20s.xml">
+      <configuration name="BabySitterTest.whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 19h 04m 10s.xml">
+      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght - 2019.09.27 at 19h 04m 52s.xml">
+      <configuration name="BabySitterTest.whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -514,15 +511,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="159">
+          <caret line="145" column="55" lean-forward="true" selection-start-line="145" selection-start-column="55" selection-end-line="145" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="163" column="43" selection-start-line="163" selection-start-column="43" selection-end-line="163" selection-end-column="43" />
+        <state relative-caret-position="414">
+          <caret line="175" column="22" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -162,15 +162,21 @@ public class BabySitterTest {
     public void whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray(){
         TimeFrame timeFrame = new TimeFrame();
         String [] expected = new String [] {"6PM", "7PM", "8PM", "9PM", "10PM", "11PM", "12AM", "1AM", "2AM"};
+        String [] expected2 = new String [] {"5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM", "12AM", "1AM", "2AM"};
         assertArrayEquals(expected, timeFrame.newArrayReturn("6PM", "2AM") );
+        assertArrayEquals(expected2, timeFrame.newArrayReturn("5PM", "2AM") );
+
     }
 
 
-  /*  @Test
+    @Test
     public void whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght() {
         TimeFrame timeFrame = new TimeFrame();
-        assertEquals(6, timeFrame.NewArrayLenght("11PM"));
-    }*/
+        assertEquals(10, timeFrame.NewArrayLenght("2AM"));
+        assertEquals(7, timeFrame.NewArrayLenght("11PM"));
+        assertEquals(1, timeFrame.NewArrayLenght("5PM"));
+        assertEquals(12, timeFrame.NewArrayLenght("4AM"));
+    }
 
     /*@Test
     public void whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt() {

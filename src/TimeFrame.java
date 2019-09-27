@@ -156,10 +156,8 @@ public class TimeFrame {
 
 
 
-   /* public int NewArrayLenght (String earlyRateLimit) {
-
-        //String [] newArray  = {newArrayString (TIME_SPAN_STR[0],earlyRateLimit)};
-        String [] newArray = newArrayString (TIME_SPAN_STR[0],earlyRateLimit);
+   public int NewArrayLenght (String earlyRateLimit) {
+        String [] newArray = newArrayReturn (TIME_SPAN_STR[0],earlyRateLimit);
         return newArray.length;
     }
 
