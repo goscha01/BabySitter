@@ -59,12 +59,14 @@ public class BabySitterTest {
     public void whenPassAStringArrayIndexReturnsANumberOfStart(){
         TimeFrame timeFrame = new TimeFrame ();
         assertEquals(1, timeFrame.startTimeStr("5PM"));
+        assertEquals(2, timeFrame.startTimeStr("6PM"));
     }
 
     @Test
     public void whenPassAStringArrayIndexReturnsANumberOfFinish(){
         TimeFrame timeFrame = new TimeFrame ();
         assertEquals(3, timeFrame.finishTimeStr("7PM"));
+        assertEquals(12, timeFrame.finishTimeStr("4AM"));
     }
 
     @Test
@@ -72,6 +74,7 @@ public class BabySitterTest {
         BabySitter babySitter = new BabySitter();
         assertEquals(5, babySitter.timeCalculationStr("5PM","10PM"));
         assertEquals(8, babySitter.timeCalculationStr("6PM","2AM"));
+        assertEquals(11, babySitter.timeCalculationStr("5PM","4AM"));
     }
 
     @Test
@@ -139,6 +142,22 @@ public class BabySitterTest {
     public void whenPassStartAndFinishTimeReturnsNewArrayAndItsLength(){
         TimeFrame timeFrame = new TimeFrame();
         assertEquals(8, timeFrame.newArray ("6PM","2AM"));
+
     }
+
+    @Test
+    public void whenPassStartAndFinishTimeReturnsNewArrayString() {
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals("[6PM, 7PM, 8PM, 9PM, 10PM, 11PM, 12AM, 1AM, 2AM]", timeFrame.newArrayString("6PM", "2AM"));
+        assertEquals("[5PM, 6PM, 7PM, 8PM, 9PM, 10PM, 11PM, 12AM, 1AM, 2AM, 3AM]", timeFrame.newArrayString("5PM", "3AM"));
+        assertEquals("[5PM, 6PM, 7PM, 8PM, 9PM, 10PM, 11PM, 12AM, 1AM, 2AM, 3AM, 4AM]", timeFrame.newArrayString("5PM", "4AM"));
+    }
+    //@Test
+    //public void whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt(){
+      //  TimeFrame timeFrame = new TimeFrame();
+        //assertEquals(6, timeFrame.earlyRateTimeNewArray("11PM"));
+     //   assertEquals(0, timeFrame.earlyRateTimeNewArray("5PM"));
+        //assertEquals(11, timeFrame.earlyRateTimeNewArray("4AM"));
+
 
 }

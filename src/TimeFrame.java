@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class TimeFrame {
 
     public static final String[] TIME_SPAN_STR = new String[]{"5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM",
@@ -40,7 +42,7 @@ public class TimeFrame {
     public int finishTimeStr(String finish) {
         int j=0;
         int index;
-        while (j<TIME_SPAN_STR.length-1){
+        while (j<TIME_SPAN_STR.length){
             if (TIME_SPAN_STR[j] == finish) {
                 return  j+1;
             }
@@ -122,4 +124,49 @@ public class TimeFrame {
         return timeArray.length;
 
     }
+
+
+    public String newArrayString (String start, String finish) {
+        BabySitter babySitter = new BabySitter();
+        int arrayLenght = babySitter.timeCalculationStr(start, finish)+1;
+        String timeArray [] = new String [arrayLenght];
+        int i=0;
+        int j = startTimeStr(start)-1;
+        while (i<arrayLenght) {
+            timeArray [i] = TIME_SPAN_STR [j];
+            i+=1; j+=1;
+        };
+
+
+         //for (String timeArrayElements: timeArray)
+           // System.out.println(timeArray);
+
+         return Arrays.toString (timeArray);
+
+
+    }
+
+
+
+    public int earlyRateTimeNewArray(String earlyRateLimit) {
+        int j=0;
+
+        while (j<-1){
+            if (TIME_SPAN_STR[j] == earlyRateLimit) {
+                if (j>0){
+                    return j;
+                }
+                else{
+                    return  0;
+                }
+            }
+            else{
+                j+=1;
+            }
+
+        }
+        return j;
+    }
+
+
 }
