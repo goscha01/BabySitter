@@ -137,22 +137,39 @@ public class TimeFrame {
             i+=1; j+=1;
         };
 
-
-         //for (String timeArrayElements: timeArray)
-           // System.out.println(timeArray);
-
          return Arrays.toString (timeArray);
+    }
 
-
+    public String [] newArrayReturn (String start, String finish) {
+        BabySitter babySitter = new BabySitter();
+        int arrayLenght = babySitter.timeCalculationStr(start, finish)+1;
+        String timeArray [] = new String [arrayLenght];
+        int i=0;
+        int j = startTimeStr(start)-1;
+        while (i<arrayLenght) {
+            timeArray [i] = TIME_SPAN_STR [j];
+            i+=1; j+=1;
+        };
+       return timeArray;
     }
 
 
 
-    public int earlyRateTimeNewArray(String earlyRateLimit) {
-        int j=0;
 
-        while (j<-1){
-            if (TIME_SPAN_STR[j] == earlyRateLimit) {
+   /* public int NewArrayLenght (String earlyRateLimit) {
+
+        //String [] newArray  = {newArrayString (TIME_SPAN_STR[0],earlyRateLimit)};
+        String [] newArray = newArrayString (TIME_SPAN_STR[0],earlyRateLimit);
+        return newArray.length;
+    }
+
+
+    /*public int earlyRateTimeNewArray(String earlyRateLimit) {
+
+        String [] newArray  = {newArrayString (TIME_SPAN_STR[0],earlyRateLimit)};
+        int j=0;
+        while (j<newArray.length){
+            if (newArray[j] == earlyRateLimit) {
                 if (j>0){
                     return j;
                 }
@@ -166,7 +183,8 @@ public class TimeFrame {
 
         }
         return j;
-    }
+        return newArray.length;
+    }*/
 
 
 }

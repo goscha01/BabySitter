@@ -1,7 +1,11 @@
+import org.junit.Assert.*;
 import org.junit.Test;
+
+import java.util.Arrays;
 
 import static javax.swing.text.StyleConstants.Family;
 import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 public class BabySitterTest {
     @Test
@@ -152,12 +156,32 @@ public class BabySitterTest {
         assertEquals("[5PM, 6PM, 7PM, 8PM, 9PM, 10PM, 11PM, 12AM, 1AM, 2AM, 3AM]", timeFrame.newArrayString("5PM", "3AM"));
         assertEquals("[5PM, 6PM, 7PM, 8PM, 9PM, 10PM, 11PM, 12AM, 1AM, 2AM, 3AM, 4AM]", timeFrame.newArrayString("5PM", "4AM"));
     }
-    //@Test
-    //public void whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt(){
-      //  TimeFrame timeFrame = new TimeFrame();
-        //assertEquals(6, timeFrame.earlyRateTimeNewArray("11PM"));
-     //   assertEquals(0, timeFrame.earlyRateTimeNewArray("5PM"));
-        //assertEquals(11, timeFrame.earlyRateTimeNewArray("4AM"));
+
+
+    @Test
+    public void whenPassStartAndFinishTimeReturnsNewArrayStringCheckArray(){
+        TimeFrame timeFrame = new TimeFrame();
+        String [] expected = new String [] {"6PM", "7PM", "8PM", "9PM", "10PM", "11PM", "12AM", "1AM", "2AM"};
+        assertArrayEquals(expected, timeFrame.newArrayReturn("6PM", "2AM") );
+    }
+
+
+  /*  @Test
+    public void whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght() {
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(6, timeFrame.NewArrayLenght("11PM"));
+    }*/
+
+    /*@Test
+    public void whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt() {
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(6, timeFrame.earlyRateTimeNewArray("11PM"));
+        assertEquals(0, timeFrame.earlyRateTimeNewArray("5PM"));
+        assertEquals(11, timeFrame.earlyRateTimeNewArray("4AM"));
+    }*/
+
+
+
 
 
 }
