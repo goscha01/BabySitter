@@ -214,5 +214,30 @@ public class BabySitterTest {
     }
 
 
+    @Test
+    public void whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght() {
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(4, timeFrame.NewBetweenArrayLenght("11PM", "2AM"));
+        assertEquals(12, timeFrame.NewBetweenArrayLenght("5PM", "4AM"));
+        assertEquals(1, timeFrame.NewBetweenArrayLenght("5PM", "5PM"));
+        assertEquals(1, timeFrame.NewBetweenArrayLenght("4AM", "4AM"));
+    }
+    @Test
+    public void whenPassAnNewArrayValuesCalculatesTotalTimeBetweenIt() {
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(3, timeFrame.BetwenRateTimeNewArray("11PM", "2AM"));
+        assertEquals(11, timeFrame.BetwenRateTimeNewArray("5PM", "4AM"));
+        assertEquals(0, timeFrame.BetwenRateTimeNewArray("5PM", "5PM"));
+        assertEquals(0, timeFrame.BetwenRateTimeNewArray("4AM","4AM"));
+    }
+
+    @Test
+    public void passFamilyRatesReturnsFamilyRates(){
+        Family family = new Family();
+        int [] expected = new int [] {1,2,3};
+        assertArrayEquals(expected, family.rates(1, 2, 3) );
+    }
+
+
 
 }

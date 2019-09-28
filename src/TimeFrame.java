@@ -175,4 +175,14 @@ public class TimeFrame {
         return NewLateArrayLenght(lateRateLimit)-1;
     }
 
+
+    public int NewBetweenArrayLenght (String earlyRateLimit, String lateRateLimit) {
+        String [] newArray = newArrayReturn (earlyRateLimit, lateRateLimit);
+        return newArray.length;
+
+    }
+    public int BetwenRateTimeNewArray(String earlyRateLimit, String lateRateLimit) {
+        return NewBetweenArrayLenght(earlyRateLimit, lateRateLimit)-1;
+    }
+
 }
