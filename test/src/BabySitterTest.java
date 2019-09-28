@@ -6,6 +6,7 @@ import java.util.Arrays;
 import static javax.swing.text.StyleConstants.Family;
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertSame;
 
 public class BabySitterTest {
     @Test
@@ -238,6 +239,28 @@ public class BabySitterTest {
         assertArrayEquals(expected, family.rates(1, 2, 3) );
     }
 
+    @Test
+    public void passFamilyTimeRatesReturnsFamilyTimeRates(){
+        Family family = new Family();
+        String [] expected = new String [] {"6PM","2AM"};
+        assertArrayEquals(expected, family.timeRates("6PM","2AM") );
+    }
+
+    @Test
+    public void whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes(){
+        Family family = new Family(1,2,3,"6PM","2AM");
+       // int earlyRate = family.earlyRate;
+        assertEquals(1,  family.earlyRate);
+        assertEquals(2,  family.betweenRate);
+        assertEquals(3,  family.lateRate);
+        assertEquals("6PM",  family.earlyRateLimit);
+        assertEquals("2AM",  family.lateRateLimit);
 
 
-}
+
+    }
+
+    //public void whenCreatingNewFamalyInstanceConstructorInstantiatsDefaultValuaesOfRatesAndTimeRates(){
+
+
+    }
