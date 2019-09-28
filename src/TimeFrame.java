@@ -28,7 +28,7 @@ public class TimeFrame {
     public int startTimeStr(String start) {
         int j=0;
         int index;
-        while (j< TIME_SPAN_STR.length-1){
+        while (j< TIME_SPAN_STR.length){
             if (TIME_SPAN_STR[j] == start) {
                 return  j+1;
             }
@@ -156,16 +156,23 @@ public class TimeFrame {
 
 
 
-   public int NewArrayLenght (String earlyRateLimit) {
+   public int NewEarlyArrayLenght (String earlyRateLimit) {
         String [] newArray = newArrayReturn (TIME_SPAN_STR[0],earlyRateLimit);
         return newArray.length;
     }
 
 
     public int earlyRateTimeNewArray(String earlyRateLimit) {
-        return NewArrayLenght(earlyRateLimit)-1;
+        return NewEarlyArrayLenght(earlyRateLimit)-1;
     }
 
+    public int NewLateArrayLenght (String lateRateLimit) {
+        String [] newArray = newArrayReturn (lateRateLimit, TIME_SPAN_STR[TIME_SPAN_STR.length - 1]);
+        return newArray.length;
 
+    }
+    public int lateRateTimeNewArray(String lateRateLimit) {
+        return NewLateArrayLenght(lateRateLimit)-1;
+    }
 
 }
