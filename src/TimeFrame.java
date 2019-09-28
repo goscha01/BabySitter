@@ -185,4 +185,8 @@ public class TimeFrame {
         return NewBetweenArrayLenght(earlyRateLimit, lateRateLimit)-1;
     }
 
+    public int BetwenRateTimeNewArrayClass(Family family) {
+        return NewBetweenArrayLenght(family.earlyRateLimit, family.lateRateLimit)-1;
+    }
+
 }

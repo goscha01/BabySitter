@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e4c38b4-917c-4c46-8f1f-5ed80b6e1368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TimeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/BabySitterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/BabySitterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="252" column="43" lean-forward="true" selection-start-line="252" selection-start-column="43" selection-end-line="252" selection-end-column="43" />
+            <state relative-caret-position="380">
+              <caret line="269" column="22" selection-start-line="269" selection-start-column="22" selection-end-line="269" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="168" column="55" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="55" />
+            <state relative-caret-position="380">
+              <caret line="187" column="38" lean-forward="true" selection-start-line="187" selection-start-column="38" selection-end-line="187" selection-end-column="38" />
               <folding>
                 <element signature="e#4393#4394#0" expanded="true" />
                 <element signature="e#4431#4432#0" expanded="true" />
@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -100,8 +100,8 @@
         <option value="$PROJECT_DIR$/src/Famaly.java" />
         <option value="$PROJECT_DIR$/src/BabySitter.java" />
         <option value="$PROJECT_DIR$/src/TestStudy.java" />
-        <option value="$PROJECT_DIR$/src/TimeFrame.java" />
         <option value="$PROJECT_DIR$/src/Family.java" />
+        <option value="$PROJECT_DIR$/src/TimeFrame.java" />
         <option value="$PROJECT_DIR$/test/src/BabySitterTest.java" />
       </list>
     </option>
@@ -179,7 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BabySitterTest.whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes">
+  <component name="RunManager" selected="JUnit.BabySitterTest.whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt">
     <configuration name="BabySitterTest.passFamilyRatesReturnsFamilyRates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="PACKAGE_NAME" value="" />
@@ -210,6 +210,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BabySitterTest.whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BabySitterTest" />
+      <option name="METHOD_NAME" value="whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BabySitterTest.whenPassAnNewArrayValuesCalculatesTotalTimeBetweenIt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="PACKAGE_NAME" value="" />
@@ -220,23 +230,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BabySitterTest.whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BabySitterTest" />
-      <option name="METHOD_NAME" value="whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BabySitterTest.whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt" />
         <item itemvalue="JUnit.BabySitterTest.whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes" />
         <item itemvalue="JUnit.BabySitterTest.passFamilyTimeRatesReturnsFamilyTimeRates" />
         <item itemvalue="JUnit.BabySitterTest.passFamilyRatesReturnsFamilyRates" />
         <item itemvalue="JUnit.BabySitterTest.whenPassAnNewArrayValuesCalculatesTotalTimeBetweenIt" />
-        <item itemvalue="JUnit.BabySitterTest.whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght" />
       </list>
     </recent_temporary>
   </component>
@@ -254,21 +254,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BabySitterTest - 2019.09.28 at 14h 10m 05s.xml">
-      <configuration name="BabySitterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght - 2019.09.28 at 14h 56m 29s.xml">
-      <configuration name="BabySitterTest.whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght - 2019.09.28 at 14h 58m 55s.xml">
-      <configuration name="BabySitterTest.whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_whenPassAnNewArrayValuesCalculatesTotalTimeBetweenIt - 2019.09.28 at 14h 59m 13s.xml">
-      <configuration name="BabySitterTest.whenPassAnNewArrayValuesCalculatesTotalTimeBetweenIt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTest_passFamilyRatesReturnsFamilyRates - 2019.09.28 at 15h 15m 21s.xml">
-      <configuration name="BabySitterTest.passFamilyRatesReturnsFamilyRates" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BabySitterTest_passFamilyTimeRatesReturnsFamilyTimeRates - 2019.09.28 at 15h 20m 34s.xml">
       <configuration name="BabySitterTest.passFamilyTimeRatesReturnsFamilyTimeRates" configurationId="JUnit" />
     </history-entry>
@@ -283,6 +268,21 @@
     </history-entry>
     <history-entry file="BabySitterTest_whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes - 2019.09.28 at 16h 33m 20s.xml">
       <configuration name="BabySitterTest.whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes - 2019.09.28 at 16h 38m 38s.xml">
+      <configuration name="BabySitterTest.whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes - 2019.09.28 at 16h 39m 08s.xml">
+      <configuration name="BabySitterTest.whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes - 2019.09.28 at 16h 40m 29s.xml">
+      <configuration name="BabySitterTest.whenCreatingNewFamalyInstanceConstructorItHasAppropriateAttributes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt - 2019.09.28 at 16h 59m 16s.xml">
+      <configuration name="BabySitterTest.whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTest_whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt - 2019.09.28 at 17h 00m 12s.xml">
+      <configuration name="BabySitterTest.whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -519,17 +519,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Family.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BabySitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TimeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="168" column="55" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="55" />
+        <state relative-caret-position="380">
+          <caret line="187" column="38" lean-forward="true" selection-start-line="187" selection-start-column="38" selection-end-line="187" selection-end-column="38" />
           <folding>
             <element signature="e#4393#4394#0" expanded="true" />
             <element signature="e#4431#4432#0" expanded="true" />
@@ -539,17 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Family.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/src/BabySitterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="252" column="43" lean-forward="true" selection-start-line="252" selection-start-column="43" selection-end-line="252" selection-end-column="43" />
+        <state relative-caret-position="380">
+          <caret line="269" column="22" selection-start-line="269" selection-start-column="22" selection-end-line="269" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

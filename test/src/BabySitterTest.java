@@ -255,12 +255,20 @@ public class BabySitterTest {
         assertEquals(3,  family.lateRate);
         assertEquals("6PM",  family.earlyRateLimit);
         assertEquals("2AM",  family.lateRateLimit);
+    }
 
-
+    @Test
+    public void whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt() {
+        Family family = new Family(1,2,3,"6PM","2AM");
+        Family family2 = new Family(1,2,3,"5PM","4AM");
+        Family family3 = new Family(1,2,3,"5PM","5PM");
+        Family family4 = new Family(1,2,3,"2AM","2AM");
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(8, timeFrame.BetwenRateTimeNewArrayClass(family));
+        assertEquals(11, timeFrame.BetwenRateTimeNewArrayClass(family2));
+        assertEquals(0, timeFrame.BetwenRateTimeNewArrayClass(family3));
+        assertEquals(0, timeFrame.BetwenRateTimeNewArrayClass(family4));
 
     }
 
-    //public void whenCreatingNewFamalyInstanceConstructorInstantiatsDefaultValuaesOfRatesAndTimeRates(){
-
-
-    }
+}
