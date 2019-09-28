@@ -156,13 +156,18 @@ public class TimeFrame {
 
 
 
-   public int NewEarlyArrayLenght (String earlyRateLimit) {
-        String [] newArray = newArrayReturn (TIME_SPAN_STR[0],earlyRateLimit);
-        return newArray.length;
-    }
+   public int NewEarlyArrayLenght (String start, String finish, String earlyRateLimit) {
+       String[] baseTimeArray = newArrayReturn(start, finish);
+       String[] newArray = newArrayReturn(baseTimeArray[0], earlyRateLimit);
+       if (newArray.length > baseTimeArray.length) {
+           return baseTimeArray.length;
+       } else {
+           return newArray.length;
+       }
+   }
 
 
-    public int earlyRateTimeNewArray(String earlyRateLimit) {
+    /*public int earlyRateTimeNewArray(String earlyRateLimit) {
         return NewEarlyArrayLenght(earlyRateLimit)-1;
     }
 
@@ -187,6 +192,6 @@ public class TimeFrame {
 
     public int BetwenRateTimeNewArrayClass(Family family) {
         return NewBetweenArrayLenght(family.earlyRateLimit, family.lateRateLimit)-1;
-    }
+    }*/
 
 }

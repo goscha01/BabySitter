@@ -182,13 +182,15 @@ public class BabySitterTest {
     @Test
     public void whenPassEarlyRateLimitReturnsAnAppropriateArrayLenght() {
         TimeFrame timeFrame = new TimeFrame();
-        assertEquals(10, timeFrame.NewEarlyArrayLenght("2AM"));
-        assertEquals(7, timeFrame.NewEarlyArrayLenght("11PM"));
-        assertEquals(1, timeFrame.NewEarlyArrayLenght("5PM"));
-        assertEquals(12, timeFrame.NewEarlyArrayLenght("4AM"));
+        assertEquals(3, timeFrame.NewEarlyArrayLenght("6PM","2AM","8PM"));
+        assertEquals(1, timeFrame.NewEarlyArrayLenght("6PM","2AM","6PM"));
+        assertEquals(9, timeFrame.NewEarlyArrayLenght("6PM","2AM","2AM"));
+        assertEquals(9, timeFrame.NewEarlyArrayLenght("6PM","2AM","3AM"));
+        assertEquals(0, timeFrame.NewEarlyArrayLenght("6PM","2AM","5PM"));
+
     }
 
-    @Test
+   /* @Test
     public void whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt() {
         TimeFrame timeFrame = new TimeFrame();
         assertEquals(6, timeFrame.earlyRateTimeNewArray("11PM"));
@@ -268,7 +270,17 @@ public class BabySitterTest {
         assertEquals(11, timeFrame.BetwenRateTimeNewArrayClass(family2));
         assertEquals(0, timeFrame.BetwenRateTimeNewArrayClass(family3));
         assertEquals(0, timeFrame.BetwenRateTimeNewArrayClass(family4));
-
     }
+
+
+
+    /*@Test
+    public void whenPassAStartAndFinishTimeCalculatesEarlyTimePriceWithDataFromFamilyConstructor(){
+        Family family = new Family(1,2,3,"6PM","2AM");
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(1, timeFrame.earlyRateTimeCalculationInputFromConstructor(family, "5PM","1AM"));
+
+
+    }*/
 
 }

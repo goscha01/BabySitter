@@ -45,4 +45,12 @@ public class BabySitter {
                 timeFrame.lateRateTime(lateRateLimit)* lateRate +
                 timeFrame.BetwenRateTime(earleRateLimit, lateRateLimit) * betweenRate;
     }
+
+
+
+    /*public int earlyRateTimeCalculationInputFromConstructor(Family family, String start, String finish) {
+        TimeFrame timeFrame = new TimeFrame();
+        return timeFrame.earlyRateTimeNewArray(earlyRateLimit)* family.earlyRate;
+    }*/
+
 }
