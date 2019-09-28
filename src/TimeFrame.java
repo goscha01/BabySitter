@@ -162,27 +162,10 @@ public class TimeFrame {
     }
 
 
-    /*public int earlyRateTimeNewArray(String earlyRateLimit) {
+    public int earlyRateTimeNewArray(String earlyRateLimit) {
+        return NewArrayLenght(earlyRateLimit)-1;
+    }
 
-        String [] newArray  = {newArrayString (TIME_SPAN_STR[0],earlyRateLimit)};
-        int j=0;
-        while (j<newArray.length){
-            if (newArray[j] == earlyRateLimit) {
-                if (j>0){
-                    return j;
-                }
-                else{
-                    return  0;
-                }
-            }
-            else{
-                j+=1;
-            }
-
-        }
-        return j;
-        return newArray.length;
-    }*/
 
 
 }

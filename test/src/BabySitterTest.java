@@ -178,13 +178,13 @@ public class BabySitterTest {
         assertEquals(12, timeFrame.NewArrayLenght("4AM"));
     }
 
-    /*@Test
+    @Test
     public void whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt() {
         TimeFrame timeFrame = new TimeFrame();
         assertEquals(6, timeFrame.earlyRateTimeNewArray("11PM"));
         assertEquals(0, timeFrame.earlyRateTimeNewArray("5PM"));
         assertEquals(11, timeFrame.earlyRateTimeNewArray("4AM"));
-    }*/
+    }
 
 
 
