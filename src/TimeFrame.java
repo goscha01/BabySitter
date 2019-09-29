@@ -167,29 +167,46 @@ public class TimeFrame {
    }
 
 
-    /*public int earlyRateTimeNewArray(String earlyRateLimit) {
-        return NewEarlyArrayLenght(earlyRateLimit)-1;
-    }
-
-    public int NewLateArrayLenght (String lateRateLimit) {
-        String [] newArray = newArrayReturn (lateRateLimit, TIME_SPAN_STR[TIME_SPAN_STR.length - 1]);
-        return newArray.length;
-
-    }
-    public int lateRateTimeNewArray(String lateRateLimit) {
-        return NewLateArrayLenght(lateRateLimit)-1;
-    }
-
-
-    public int NewBetweenArrayLenght (String earlyRateLimit, String lateRateLimit) {
-        String [] newArray = newArrayReturn (earlyRateLimit, lateRateLimit);
-        return newArray.length;
+    public int earlyRateTimeNewArray(String start, String finish, String earlyRateLimit) {
+        String[] baseTimeArray = newArrayReturn(start, finish);
+        String[] newArray = newArrayReturn(baseTimeArray[0], earlyRateLimit);
+        if (newArray.length>0) {
+                    if (newArray.length<=baseTimeArray.length) {
+                            return newArray.length-1;
+                    }
+                    else {
+                            return baseTimeArray.length-1;
+                    }
+        } else {
+            return 0;
+        }
 
     }
-    public int BetwenRateTimeNewArray(String earlyRateLimit, String lateRateLimit) {
-        return NewBetweenArrayLenght(earlyRateLimit, lateRateLimit)-1;
+
+
+
+    public int lateRateTimeNewArray(String start, String finish,String lateRateLimit) {
+        String[] baseTimeArray = newArrayReturn(start, finish);
+        String[] newArray = newArrayReturn(lateRateLimit, baseTimeArray[baseTimeArray.length-1]);
+        if (newArray.length>0) {
+                if (newArray.length<=baseTimeArray.length) {
+                    return newArray.length-1;
+                } else {
+                    return baseTimeArray.length-1;
+                }
+        } else {
+            return 0;
+        }
     }
 
+
+
+    public int BetwenRateTimeNewArray(String start, String finish, String earlyRateLimit, String lateRateLimit) {
+        String[] baseTimeArray = newArrayReturn(start, finish);
+        int result = baseTimeArray.length -1 - earlyRateTimeNewArray(start, finish, earlyRateLimit) - lateRateTimeNewArray( start,  finish, lateRateLimit);
+        return result;
+    }
+/*
     public int BetwenRateTimeNewArrayClass(Family family) {
         return NewBetweenArrayLenght(family.earlyRateLimit, family.lateRateLimit)-1;
     }*/

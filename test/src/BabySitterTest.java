@@ -184,57 +184,46 @@ public class BabySitterTest {
         TimeFrame timeFrame = new TimeFrame();
         assertEquals(3, timeFrame.NewEarlyArrayLenght("6PM","2AM","8PM"));
         assertEquals(1, timeFrame.NewEarlyArrayLenght("6PM","2AM","6PM"));
-        assertEquals(9, timeFrame.NewEarlyArrayLenght("6PM","2AM","2AM"));
-        assertEquals(9, timeFrame.NewEarlyArrayLenght("6PM","2AM","3AM"));
+        assertEquals(10, timeFrame.NewEarlyArrayLenght("5PM","4AM","2AM"));
+        assertEquals(11, timeFrame.NewEarlyArrayLenght("6PM","4AM","4AM"));
         assertEquals(0, timeFrame.NewEarlyArrayLenght("6PM","2AM","5PM"));
 
     }
 
-   /* @Test
+   @Test
     public void whenPassAnNewArrayValueCalculatesTotalTimeBeforeIt() {
         TimeFrame timeFrame = new TimeFrame();
-        assertEquals(6, timeFrame.earlyRateTimeNewArray("11PM"));
-        assertEquals(0, timeFrame.earlyRateTimeNewArray("5PM"));
-        assertEquals(11, timeFrame.earlyRateTimeNewArray("4AM"));
-    }
-
-    @Test
-    public void whenPassLateRateLimitReturnsAnAppropriateArrayLenght() {
-        TimeFrame timeFrame = new TimeFrame();
-        assertEquals(3, timeFrame.NewLateArrayLenght("2AM"));
-        assertEquals(6, timeFrame.NewLateArrayLenght("11PM"));
-        assertEquals(12, timeFrame.NewLateArrayLenght("5PM"));
-        assertEquals(1, timeFrame.NewLateArrayLenght("4AM"));
-
+        assertEquals(2, timeFrame.earlyRateTimeNewArray("6PM","2AM","8PM"));
+        assertEquals(0, timeFrame.earlyRateTimeNewArray("6PM","2AM","6PM"));
+        assertEquals(8, timeFrame.earlyRateTimeNewArray("6PM","2AM","3AM"));
+        assertEquals(10, timeFrame.earlyRateTimeNewArray("6PM","4AM","4AM"));
+        assertEquals(0, timeFrame.earlyRateTimeNewArray("6PM","2AM","5PM"));
     }
 
     @Test
     public void whenPassAnNewArrayValueCalculatesTotalTimeAfterIt() {
         TimeFrame timeFrame = new TimeFrame();
-        assertEquals(5, timeFrame.lateRateTimeNewArray("11PM"));
-        assertEquals(11, timeFrame.lateRateTimeNewArray("5PM"));
-        assertEquals(0, timeFrame.lateRateTimeNewArray("4AM"));
+        assertEquals(6, timeFrame.lateRateTimeNewArray("6PM","2AM","8PM"));
+        assertEquals(8, timeFrame.lateRateTimeNewArray("6PM","2AM","6PM"));
+        assertEquals(0, timeFrame.lateRateTimeNewArray("6PM","2AM","2AM"));
+        assertEquals(0, timeFrame.lateRateTimeNewArray("6PM","4AM","4AM"));
+        assertEquals(8, timeFrame.lateRateTimeNewArray("6PM","2AM","5PM"));
+        assertEquals(0, timeFrame.lateRateTimeNewArray("6PM","3AM","4AM"));
     }
 
-
     @Test
-    public void whenPassBetweenRateLimitReturnsAnAppropriateArrayLenght() {
+    public void whenPassAnNewArrayValueCalculatesTotalTimeBetweenIt() {
         TimeFrame timeFrame = new TimeFrame();
-        assertEquals(4, timeFrame.NewBetweenArrayLenght("11PM", "2AM"));
-        assertEquals(12, timeFrame.NewBetweenArrayLenght("5PM", "4AM"));
-        assertEquals(1, timeFrame.NewBetweenArrayLenght("5PM", "5PM"));
-        assertEquals(1, timeFrame.NewBetweenArrayLenght("4AM", "4AM"));
-    }
-    @Test
-    public void whenPassAnNewArrayValuesCalculatesTotalTimeBetweenIt() {
-        TimeFrame timeFrame = new TimeFrame();
-        assertEquals(3, timeFrame.BetwenRateTimeNewArray("11PM", "2AM"));
-        assertEquals(11, timeFrame.BetwenRateTimeNewArray("5PM", "4AM"));
-        assertEquals(0, timeFrame.BetwenRateTimeNewArray("5PM", "5PM"));
-        assertEquals(0, timeFrame.BetwenRateTimeNewArray("4AM","4AM"));
+        assertEquals(2, timeFrame.BetwenRateTimeNewArray("6PM","2AM","6PM","8PM"));
+        assertEquals(11, timeFrame.BetwenRateTimeNewArray("5PM","4AM","5PM","4AM"));
+        assertEquals(9, timeFrame.BetwenRateTimeNewArray("6PM","3AM","5PM","4AM"));
+        assertEquals(0, timeFrame.BetwenRateTimeNewArray("6PM","4AM","10PM","10PM"));
+
     }
 
-    @Test
+
+
+    /*@Test
     public void passFamilyRatesReturnsFamilyRates(){
         Family family = new Family();
         int [] expected = new int [] {1,2,3};
