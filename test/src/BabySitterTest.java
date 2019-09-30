@@ -176,6 +176,7 @@ public class BabySitterTest {
         assertArrayEquals(expected2, timeFrame.newArrayReturn("5PM", "2AM") );
         assertArrayEquals(expected3, timeFrame.newArrayReturn("5PM", "5PM") );
         assertArrayEquals(expected4, timeFrame.newArrayReturn("4AM", "4AM") );
+
     }
 
 
@@ -217,13 +218,12 @@ public class BabySitterTest {
         assertEquals(2, timeFrame.BetwenRateTimeNewArray("6PM","2AM","6PM","8PM"));
         assertEquals(11, timeFrame.BetwenRateTimeNewArray("5PM","4AM","5PM","4AM"));
         assertEquals(9, timeFrame.BetwenRateTimeNewArray("6PM","3AM","5PM","4AM"));
-        assertEquals(0, timeFrame.BetwenRateTimeNewArray("6PM","4AM","10PM","10PM"));
-
+        assertEquals(7, timeFrame.BetwenRateTimeNewArray("6PM","2AM","5PM","1AM"));
     }
 
 
 
-    /*@Test
+    @Test
     public void passFamilyRatesReturnsFamilyRates(){
         Family family = new Family();
         int [] expected = new int [] {1,2,3};
@@ -249,16 +249,18 @@ public class BabySitterTest {
     }
 
     @Test
-    public void whenPassAnFamalyInstanceNewArrayValuesCalculatesTotalTimeBetweenIt() {
+    public void whenPassAnFamalyInstanceNewArrayValuesCalculatesBetweenRate() {
         Family family = new Family(1,2,3,"6PM","2AM");
-        Family family2 = new Family(1,2,3,"5PM","4AM");
+        Family family2 = new Family(1,2,3,"5PM","1AM");
         Family family3 = new Family(1,2,3,"5PM","5PM");
         Family family4 = new Family(1,2,3,"2AM","2AM");
+        Family family5 = new Family(1,2,3,"5PM","3AM");
         TimeFrame timeFrame = new TimeFrame();
-        assertEquals(8, timeFrame.BetwenRateTimeNewArrayClass(family));
-        assertEquals(11, timeFrame.BetwenRateTimeNewArrayClass(family2));
-        assertEquals(0, timeFrame.BetwenRateTimeNewArrayClass(family3));
-        assertEquals(0, timeFrame.BetwenRateTimeNewArrayClass(family4));
+        assertEquals(8, timeFrame.BetwenRateTimeNewArrayClass("6PM","2AM",family));
+        assertEquals(7, timeFrame.BetwenRateTimeNewArrayClass("6PM","2AM",family2));
+        assertEquals(0, timeFrame.BetwenRateTimeNewArrayClass("6PM","2AM",family3));
+        assertEquals(0, timeFrame.BetwenRateTimeNewArrayClass("6PM","2AM",family4));
+        assertEquals(8, timeFrame.BetwenRateTimeNewArrayClass("6PM","2AM",family5));
     }
 
 

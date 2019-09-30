@@ -200,15 +200,14 @@ public class TimeFrame {
     }
 
 
-
     public int BetwenRateTimeNewArray(String start, String finish, String earlyRateLimit, String lateRateLimit) {
         String[] baseTimeArray = newArrayReturn(start, finish);
         int result = baseTimeArray.length -1 - earlyRateTimeNewArray(start, finish, earlyRateLimit) - lateRateTimeNewArray( start,  finish, lateRateLimit);
         return result;
     }
-/*
-    public int BetwenRateTimeNewArrayClass(Family family) {
-        return NewBetweenArrayLenght(family.earlyRateLimit, family.lateRateLimit)-1;
-    }*/
+
+    public int BetwenRateTimeNewArrayClass(String start, String finish, Family family) {
+        return BetwenRateTimeNewArray(start, finish, family.earlyRateLimit, family.lateRateLimit);
+    }
 
 }
