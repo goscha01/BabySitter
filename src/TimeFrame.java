@@ -27,7 +27,6 @@ public class TimeFrame {
 
     public int startTimeStr(String start) {
         int j=0;
-        int index;
         while (j< TIME_SPAN_STR.length){
             if (TIME_SPAN_STR[j] == start) {
                 return  j+1;
@@ -41,7 +40,6 @@ public class TimeFrame {
 
     public int finishTimeStr(String finish) {
         int j=0;
-        int index;
         while (j<TIME_SPAN_STR.length){
             if (TIME_SPAN_STR[j] == finish) {
                 return  j+1;
@@ -55,7 +53,7 @@ public class TimeFrame {
 
     public int earlyRateTime(String earlyRateLimit) {
         int j=0;
-        while (j<TIME_SPAN_STR.length-1){
+        while (j<TIME_SPAN_STR.length){
             if (TIME_SPAN_STR[j] == earlyRateLimit) {
                 if (j>0){
                     return j;
@@ -208,6 +206,15 @@ public class TimeFrame {
 
     public int BetwenRateTimeNewArrayClass(String start, String finish, Family family) {
         return BetwenRateTimeNewArray(start, finish, family.earlyRateLimit, family.lateRateLimit);
+    }
+
+    public int EarlyRateTimeNewArrayClass(String start, String finish, Family family) {
+        return earlyRateTimeNewArray(start, finish, family.earlyRateLimit);
+    }
+
+
+    public int lateRateTimeNewArrayClass(String start, String finish, Family family) {
+        return lateRateTimeNewArray(start, finish, family.lateRateLimit);
     }
 
 }

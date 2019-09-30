@@ -249,7 +249,7 @@ public class BabySitterTest {
     }
 
     @Test
-    public void whenPassAnFamalyInstanceNewArrayValuesCalculatesBetweenRate() {
+    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesBetweenRate() {
         Family family = new Family(1,2,3,"6PM","2AM");
         Family family2 = new Family(1,2,3,"5PM","1AM");
         Family family3 = new Family(1,2,3,"5PM","5PM");
@@ -263,10 +263,39 @@ public class BabySitterTest {
         assertEquals(8, timeFrame.BetwenRateTimeNewArrayClass("6PM","2AM",family5));
     }
 
+    @Test
+    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesEarlyRate() {
+        Family family = new Family(1,2,3,"6PM","2AM");
+        Family family2 = new Family(1,2,3,"5PM","1AM");
+        Family family3 = new Family(1,2,3,"7PM","5PM");
+        Family family4 = new Family(1,2,3,"2AM","2AM");
+        Family family5 = new Family(1,2,3,"1AM","3AM");
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(0, timeFrame.EarlyRateTimeNewArrayClass("6PM","2AM",family));
+        assertEquals(0, timeFrame.EarlyRateTimeNewArrayClass("6PM","2AM",family2));
+        assertEquals(1, timeFrame.EarlyRateTimeNewArrayClass("6PM","2AM",family3));
+        assertEquals(8, timeFrame.EarlyRateTimeNewArrayClass("6PM","2AM",family4));
+        assertEquals(7, timeFrame.EarlyRateTimeNewArrayClass("6PM","2AM",family5));
+    }
+
+    @Test
+    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesLateRate() {
+        Family family = new Family(1, 2, 3, "6PM", "6PM");
+        Family family2 = new Family(1, 2, 3, "5PM", "2AM");
+        Family family3 = new Family(1, 2, 3, "7PM", "10PM");
+        Family family4 = new Family(1, 2, 3, "2AM", "4AM");
+        Family family5 = new Family(1, 2, 3, "1AM", "5PM");
+        TimeFrame timeFrame = new TimeFrame();
+        assertEquals(8, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family));
+        assertEquals(0, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family2));
+        assertEquals(4, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family3));
+        assertEquals(0, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family4));
+        assertEquals(8, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family5));
+    }
 
 
-    /*@Test
-    public void whenPassAStartAndFinishTimeCalculatesEarlyTimePriceWithDataFromFamilyConstructor(){
+    @Test
+    public void whenPassAStartFinishnAndFamilyCalculatesTotalBabySitterEarnings(){
         Family family = new Family(1,2,3,"6PM","2AM");
         TimeFrame timeFrame = new TimeFrame();
         assertEquals(1, timeFrame.earlyRateTimeCalculationInputFromConstructor(family, "5PM","1AM"));

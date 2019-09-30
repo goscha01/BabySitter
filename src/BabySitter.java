@@ -24,10 +24,17 @@ public class BabySitter {
         int startTime = timeFrame.startTimeStr(start);
         int finishTime = timeFrame.finishTimeStr(finish);
         totalTime = finishTime - startTime;
-        return totalTime;
+        if(totalTime>=0) {
+            return totalTime;
+        }
+        else{
+            return 0;
     }
 
-    public int rateTimeCalculation(int rate, String earleRateLimit) {
+
+    }
+
+        public int rateTimeCalculation(int rate, String earleRateLimit) {
         TimeFrame timeFrame = new TimeFrame();
         return timeFrame.earlyRateTime(earleRateLimit)* rate;
        }
