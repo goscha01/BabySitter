@@ -1,10 +1,12 @@
 import org.junit.Assert.*;
 import org.junit.Test;
 
+import javax.swing.*;
 import java.util.Arrays;
 
 import static javax.swing.text.StyleConstants.Family;
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertNotNull;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertSame;
 
@@ -357,8 +359,34 @@ public class BabySitterTest {
         assertEquals(24, babySitter.TotalEarning("6PM","2AM",family3));
         assertEquals(8, babySitter.TotalEarning("6PM","2AM",family4));
         assertEquals(16, babySitter.TotalEarning("6PM","2AM",family5));
-
-
     }
+
+    @Test
+    public void whenProgramRunsGUIAppiers () {
+        GUI frame = new GUI();
+        assertNotNull(frame);
+        JPanel panel = new JPanel();
+        assertNotNull(panel);
+        JLabel startlbl = new JLabel();
+        assertNotNull(startlbl);
+        JComboBox startcb = new JComboBox();
+        assertNotNull(startcb);
+        JLabel finishlbl = new JLabel();
+        assertNotNull(finishlbl);
+        JComboBox finishcb = new JComboBox();
+        assertNotNull(finishcb);
+        JLabel familylbl = new JLabel();
+        assertNotNull(familylbl);
+        JRadioButton familyrb1 = new JRadioButton();
+        assertNotNull(familyrb1);
+        JRadioButton familyrb2 = new JRadioButton();
+        assertNotNull(familyrb2);
+        JRadioButton familyrb3 = new JRadioButton();
+        assertNotNull(familyrb3);
+        JButton btn = new JButton();
+        assertNotNull(btn);
+    }
+
+
 
 }
