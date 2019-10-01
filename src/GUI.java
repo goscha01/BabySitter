@@ -26,14 +26,13 @@ public class GUI {
         JLabel startlbl = new JLabel("Select a start time");
         panel.add(startlbl);
 
-
-        JComboBox startcb = new JComboBox();
+        JComboBox startcb = new JComboBox(TimeFrame.TIME_SPAN_STR);
         panel.add(startcb);
 
         JLabel finishlbl = new JLabel("Select a finish time");
         panel.add(finishlbl);
 
-        JComboBox finishcb = new JComboBox();
+        JComboBox finishcb = new JComboBox(TimeFrame.TIME_SPAN_STR);
         panel.add(finishcb);
 
         JLabel familylbl = new JLabel("Select a Family");
@@ -52,9 +51,60 @@ public class GUI {
         JButton btn = new JButton("Calculate");
         panel.add(btn);
 
+        JTextArea resultlbl = new JTextArea("            ");
+
+
         frame.setVisible(true);
 
+        //////////////
+
+        btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String start = (String) startcb.getSelectedItem();
+                String finish = (String) finishcb.getSelectedItem();
+                Family family = new Family();
+
+                if (familyrb1.isSelected()){
+                family.earlyRate = 15;
+                family.betweenRate = 0;
+                family.lateRate = 20;
+                family.earlyRateLimit = "11PM";
+                family.lateRateLimit = "11PM";
+                }
+                else if (familyrb2.isSelected()) {
+                    family.earlyRate = 12;
+                    family.betweenRate = 8;
+                    family.lateRate = 16;
+                    family.earlyRateLimit = "10PM";
+                    family.lateRateLimit = "12AM";
+                }
+                else {
+                    family.earlyRate = 21;
+                    family.betweenRate = 0;
+                    family.lateRate = 15;
+                    family.earlyRateLimit = "9PM";
+                    family.lateRateLimit = "9PM";
+                                }
+
+                BabySitter babySitter = new BabySitter();
+                int result = babySitter.TotalEarning(start, finish, family);
+
+
+                JOptionPane.showMessageDialog(null,
+                        "your nightly charge is $"+String.valueOf(result)+" .",
+                        "Result",
+                        JOptionPane.WARNING_MESSAGE);
+
+
+
+
+
+            }
+        });
 
     }
+
+
 
 }
