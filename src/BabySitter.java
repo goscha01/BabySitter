@@ -53,22 +53,30 @@ public class BabySitter {
                 timeFrame.BetwenRateTime(earleRateLimit, lateRateLimit) * betweenRate;
     }
 
-    public int EarlyRateEarning(String start, String finish, Family family) {
+    public int earlyRateEarning(String start, String finish, Family family) {
         TimeFrame timeFrame = new TimeFrame();
-        int earlyErning = timeFrame.EarlyRateTimeNewArrayClass (start, finish, family)* family.earlyRate;
+        int earlyErning = timeFrame.earlyRateTimeNewArrayClass (start, finish, family)* family.earlyRate;
         return earlyErning;
     }
 
-    public int LateRateEarning(String start, String finish, Family family) {
+    public int lateRateEarning(String start, String finish, Family family) {
         TimeFrame timeFrame = new TimeFrame();
         int lateErning = timeFrame.lateRateTimeNewArrayClass (start, finish, family)* family.lateRate;
         return lateErning;
     }
 
-    public int BetweenRateEarning(String start, String finish, Family family) {
+    public int betweenRateEarning(String start, String finish, Family family) {
         TimeFrame timeFrame = new TimeFrame();
-        int betweenErning = timeFrame.BetwenRateTimeNewArrayClass(start, finish, family )* family.betweenRate;
+        int betweenErning = timeFrame.betwenRateTimeNewArrayClass(start, finish, family )* family.betweenRate;
         return betweenErning;
+    }
+
+    public int TotalEarning(String start, String finish, Family family) {
+        BabySitter babySitter = new BabySitter();
+        int totalEarning = babySitter.earlyRateEarning(start, finish, family)+
+                babySitter.betweenRateEarning(start, finish, family)+
+                babySitter.lateRateEarning(start, finish, family);
+        return totalEarning;
     }
 
 
