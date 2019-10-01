@@ -84,6 +84,8 @@ public class BabySitterTest {
         assertEquals(11, babySitter.timeCalculationStr("5PM","4AM"));
         assertEquals(0, babySitter.timeCalculationStr("5PM","5PM"));
         assertEquals(0, babySitter.timeCalculationStr("4AM","4AM"));
+        assertEquals(0, babySitter.timeCalculationStr("5AM","4AM"));
+
 
 
     }
@@ -172,11 +174,12 @@ public class BabySitterTest {
         String [] expected2 = new String [] {"5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM", "12AM", "1AM", "2AM"};
         String [] expected3 = new String [] {"5PM"};
         String [] expected4 = new String [] { "4AM"};
+        String [] expected5 = new String [] { "4AM"};
         assertArrayEquals(expected, timeFrame.newArrayReturn("6PM", "2AM") );
         assertArrayEquals(expected2, timeFrame.newArrayReturn("5PM", "2AM") );
         assertArrayEquals(expected3, timeFrame.newArrayReturn("5PM", "5PM") );
         assertArrayEquals(expected4, timeFrame.newArrayReturn("4AM", "4AM") );
-
+        assertArrayEquals(expected5, timeFrame.newArrayReturn("5AM", "4AM") );
     }
 
 
@@ -187,7 +190,8 @@ public class BabySitterTest {
         assertEquals(1, timeFrame.NewEarlyArrayLenght("6PM","2AM","6PM"));
         assertEquals(10, timeFrame.NewEarlyArrayLenght("5PM","4AM","2AM"));
         assertEquals(11, timeFrame.NewEarlyArrayLenght("6PM","4AM","4AM"));
-        assertEquals(0, timeFrame.NewEarlyArrayLenght("6PM","2AM","5PM"));
+        assertEquals(11, timeFrame.NewEarlyArrayLenght("6PM","4AM","4AM"));
+        assertEquals(1, timeFrame.NewEarlyArrayLenght("6PM","2AM","5PM"));
 
     }
 
@@ -210,6 +214,7 @@ public class BabySitterTest {
         assertEquals(0, timeFrame.lateRateTimeNewArray("6PM","4AM","4AM"));
         assertEquals(8, timeFrame.lateRateTimeNewArray("6PM","2AM","5PM"));
         assertEquals(0, timeFrame.lateRateTimeNewArray("6PM","3AM","4AM"));
+
     }
 
     @Test
@@ -249,7 +254,7 @@ public class BabySitterTest {
     }
 
     @Test
-    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesBetweenRate() {
+    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesBetweenTimeRate() {
         Family family = new Family(1,2,3,"6PM","2AM");
         Family family2 = new Family(1,2,3,"5PM","1AM");
         Family family3 = new Family(1,2,3,"5PM","5PM");
@@ -264,7 +269,7 @@ public class BabySitterTest {
     }
 
     @Test
-    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesEarlyRate() {
+    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesEarlyTimeRate() {
         Family family = new Family(1,2,3,"6PM","2AM");
         Family family2 = new Family(1,2,3,"5PM","1AM");
         Family family3 = new Family(1,2,3,"7PM","5PM");
@@ -279,7 +284,7 @@ public class BabySitterTest {
     }
 
     @Test
-    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesLateRate() {
+    public void whenPassAnFamilyInstanceNewArrayValuesCalculatesLateTimeRate() {
         Family family = new Family(1, 2, 3, "6PM", "6PM");
         Family family2 = new Family(1, 2, 3, "5PM", "2AM");
         Family family3 = new Family(1, 2, 3, "7PM", "10PM");
@@ -293,8 +298,53 @@ public class BabySitterTest {
         assertEquals(8, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family5));
     }
 
+    @Test
+    public void whenPassAnFamalyInstanceAndStartAndFinishTimeCalculatesEarlyRateEarning(){
+        Family family = new Family(1,2,3,"6PM","2AM");
+        Family family2 = new Family(1,2,3,"5PM","1AM");
+        Family family3 = new Family(1,2,3,"7PM","5PM");
+        Family family4 = new Family(1,2,3,"2AM","2AM");
+        Family family5 = new Family(1,2,3,"1AM","3AM");
+        BabySitter babySitter = new BabySitter();
+        assertEquals(0, babySitter.EarlyRateEarning("6PM","2AM",family));
+        assertEquals(0, babySitter.EarlyRateEarning("6PM","2AM",family2));
+        assertEquals(1, babySitter.EarlyRateEarning("6PM","2AM",family3));
+        assertEquals(8, babySitter.EarlyRateEarning("6PM","2AM",family4));
+        assertEquals(7, babySitter.EarlyRateEarning("6PM","2AM",family5));
+    }
 
     @Test
+    public void whenPassAnFamalyInstanceAndStartAndFinishTimeCalculatesLateRateEarning(){
+        Family family = new Family(1, 2, 3, "6PM", "6PM");
+        Family family2 = new Family(1, 2, 3, "5PM", "2AM");
+        Family family3 = new Family(1, 2, 3, "7PM", "10PM");
+        Family family4 = new Family(1, 2, 3, "2AM", "4AM");
+        Family family5 = new Family(1, 2, 3, "1AM", "5PM");
+        BabySitter babySitter = new BabySitter();
+        assertEquals(24, babySitter.LateRateEarning("6PM","2AM",family));
+        assertEquals(0, babySitter.LateRateEarning("6PM","2AM",family2));
+        assertEquals(12, babySitter.LateRateEarning("6PM","2AM",family3));
+        assertEquals(0, babySitter.LateRateEarning("6PM","2AM",family4));
+        assertEquals(24, babySitter.LateRateEarning("6PM","2AM",family5));
+    }
+
+    @Test
+    public void whenPassAnFamalyInstanceAndStartAndFinishTimeCalculatesBetweenRateEarning(){
+        Family family = new Family(1,2,3,"6PM","2AM");
+        Family family2 = new Family(1,2,3,"5PM","1AM");
+        Family family3 = new Family(1,2,3,"5PM","5PM");
+        Family family4 = new Family(1,2,3,"2AM","2AM");
+        Family family5 = new Family(1,2,3,"5PM","3AM");
+        BabySitter babySitter = new BabySitter();
+        assertEquals(16, babySitter.BetweenRateEarning("6PM","2AM",family));
+        assertEquals(14, babySitter.BetweenRateEarning("6PM","2AM",family2));
+        assertEquals(0, babySitter.BetweenRateEarning("6PM","2AM",family3));
+        assertEquals(0, babySitter.BetweenRateEarning("6PM","2AM",family4));
+        assertEquals(16, babySitter.BetweenRateEarning("6PM","2AM",family5));
+    }
+
+
+    /*@Test
     public void whenPassAStartFinishnAndFamilyCalculatesTotalBabySitterEarnings(){
         Family family = new Family(1,2,3,"6PM","2AM");
         TimeFrame timeFrame = new TimeFrame();

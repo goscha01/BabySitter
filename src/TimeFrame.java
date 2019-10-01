@@ -157,11 +157,16 @@ public class TimeFrame {
    public int NewEarlyArrayLenght (String start, String finish, String earlyRateLimit) {
        String[] baseTimeArray = newArrayReturn(start, finish);
        String[] newArray = newArrayReturn(baseTimeArray[0], earlyRateLimit);
-       if (newArray.length > baseTimeArray.length) {
-           return baseTimeArray.length;
+       if (newArray.length>=0) {
+               if (newArray.length > baseTimeArray.length) {
+                   return baseTimeArray.length-1;
+               } else {
+                   return newArray.length;
+               }
        } else {
-           return newArray.length;
+           return 0;
        }
+
    }
 
 

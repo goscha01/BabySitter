@@ -53,6 +53,25 @@ public class BabySitter {
                 timeFrame.BetwenRateTime(earleRateLimit, lateRateLimit) * betweenRate;
     }
 
+    public int EarlyRateEarning(String start, String finish, Family family) {
+        TimeFrame timeFrame = new TimeFrame();
+        int earlyErning = timeFrame.EarlyRateTimeNewArrayClass (start, finish, family)* family.earlyRate;
+        return earlyErning;
+    }
+
+    public int LateRateEarning(String start, String finish, Family family) {
+        TimeFrame timeFrame = new TimeFrame();
+        int lateErning = timeFrame.lateRateTimeNewArrayClass (start, finish, family)* family.lateRate;
+        return lateErning;
+    }
+
+    public int BetweenRateEarning(String start, String finish, Family family) {
+        TimeFrame timeFrame = new TimeFrame();
+        int betweenErning = timeFrame.BetwenRateTimeNewArrayClass(start, finish, family )* family.betweenRate;
+        return betweenErning;
+    }
+
+
 
 
     /*public int earlyRateTimeCalculationInputFromConstructor(Family family, String start, String finish) {
