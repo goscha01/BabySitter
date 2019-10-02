@@ -48,6 +48,12 @@ public class GUI {
         panel.add(familyrb2);
         panel.add(familyrb3);
 
+        ButtonGroup buttonGroup = new ButtonGroup();
+        buttonGroup.add(familyrb1);
+        buttonGroup.add(familyrb2);
+        buttonGroup.add(familyrb3);
+
+
         JButton btn = new JButton("Calculate");
         panel.add(btn);
 
@@ -98,7 +104,7 @@ public class GUI {
 
 
 
-
+                buttonGroup.clearSelection();
 
             }
         });
