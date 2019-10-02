@@ -1,24 +1,18 @@
-import java.awt.Component;
-import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-
 public class GUI {
-    public   void guiBuilder() {
-
+    public   void   guiBuilder() {
 
         JFrame frame = new JFrame("Babysitter Earning ");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 150);
         frame.setLocation(430, 100);
-
 
         JPanel panel = new JPanel();
         frame.add(panel);
@@ -53,16 +47,12 @@ public class GUI {
         buttonGroup.add(familyrb2);
         buttonGroup.add(familyrb3);
 
-
         JButton btn = new JButton("Calculate");
         panel.add(btn);
 
-        JTextArea resultlbl = new JTextArea("            ");
-
-
         frame.setVisible(true);
 
-        //////////////
+        ///////////////////////
 
         btn.addActionListener(new ActionListener() {
             @Override
@@ -72,11 +62,11 @@ public class GUI {
                 Family family = new Family();
 
                 if (familyrb1.isSelected()){
-                family.earlyRate = 15;
-                family.betweenRate = 0;
-                family.lateRate = 20;
-                family.earlyRateLimit = "11PM";
-                family.lateRateLimit = "11PM";
+                    family.earlyRate = 15;
+                    family.betweenRate = 0;
+                    family.lateRate = 20;
+                    family.earlyRateLimit = "11PM";
+                    family.lateRateLimit = "11PM";
                 }
                 else if (familyrb2.isSelected()) {
                     family.earlyRate = 12;
@@ -91,18 +81,16 @@ public class GUI {
                     family.lateRate = 15;
                     family.earlyRateLimit = "9PM";
                     family.lateRateLimit = "9PM";
-                                }
+                }
 
                 BabySitter babySitter = new BabySitter();
                 int result = babySitter.TotalEarning(start, finish, family);
 
 
                 JOptionPane.showMessageDialog(null,
-                        "your nightly charge is $"+String.valueOf(result)+" .",
+                        "your nightly charge is $"+ result +" .",
                         "Result",
-                        JOptionPane.WARNING_MESSAGE);
-
-
+                        JOptionPane.OK_OPTION);
 
                 buttonGroup.clearSelection();
 
