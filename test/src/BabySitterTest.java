@@ -88,7 +88,7 @@ public class BabySitterTest {
         assertEquals(8, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family));
         assertEquals(0, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family2));
         assertEquals(4, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family3));
-       // assertEquals(java.lang.NegativeArraySizeException, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family4));
+        assertEquals(0, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family4));
         assertEquals(8, timeFrame.lateRateTimeNewArrayClass("6PM", "2AM", family5));
     }
 
@@ -100,11 +100,11 @@ public class BabySitterTest {
         Family family4 = new Family(1,2,3,"2AM","2AM");
         Family family5 = new Family(1,2,3,"5PM","3AM");
         BabySitter babySitter = new BabySitter();
-        assertEquals(16, babySitter.TotalEarning("6PM","2AM",family));
-        assertEquals(17, babySitter.TotalEarning("6PM","2AM",family2));
-        assertEquals(24, babySitter.TotalEarning("6PM","2AM",family3));
-        assertEquals(8, babySitter.TotalEarning("6PM","2AM",family4));
-        assertEquals(16, babySitter.TotalEarning("6PM","2AM",family5));
+        assertEquals(16, babySitter.totalEarning("6PM","2AM",family));
+        assertEquals(17, babySitter.totalEarning("6PM","2AM",family2));
+        assertEquals(24, babySitter.totalEarning("6PM","2AM",family3));
+        assertEquals(8, babySitter.totalEarning("6PM","2AM",family4));
+        assertEquals(16, babySitter.totalEarning("6PM","2AM",family5));
     }
 
     @Test

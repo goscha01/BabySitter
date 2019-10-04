@@ -9,28 +9,37 @@ import javax.swing.*;
 public class GUI {
     public   void   guiBuilder() {
 
+        //Builds a frame
         JFrame frame = new JFrame("Babysitter Earning ");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 150);
         frame.setLocation(430, 100);
 
+        //Builds a  panel
         JPanel panel = new JPanel();
         frame.add(panel);
 
+        //Puts a label for a start time
         JLabel startlbl = new JLabel("Select a start time");
         panel.add(startlbl);
 
+        //Builds a dropbox with time values for the start time
         JComboBox startcb = new JComboBox(TimeFrame.TIME_SPAN_STR);
         panel.add(startcb);
 
+        //Puts a label for a finish  time
         JLabel finishlbl = new JLabel("Select a finish time");
         panel.add(finishlbl);
 
+        //Builds a dropbox with time values for the finish time
         JComboBox finishcb = new JComboBox(TimeFrame.TIME_SPAN_STR);
         panel.add(finishcb);
 
+        //Puts a label for a family
         JLabel familylbl = new JLabel("Select a Family");
         panel.add(familylbl);
+
+        //Puts radio buts for a family choise
 
         JRadioButton familyrb1 = new JRadioButton ("Family 1");
         familyrb1.setVisible(true);
@@ -42,25 +51,29 @@ public class GUI {
         panel.add(familyrb2);
         panel.add(familyrb3);
 
+        //Groups radio buttons to be able to clear them
         ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(familyrb1);
         buttonGroup.add(familyrb2);
         buttonGroup.add(familyrb3);
 
+        //Puts the calculate button
         JButton btn = new JButton("Calculate");
         panel.add(btn);
 
         frame.setVisible(true);
 
-        ///////////////////////
-
+        //The action after clicking the calculate button
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                //Assigned chosen values to variables
                 String start = (String) startcb.getSelectedItem();
                 String finish = (String) finishcb.getSelectedItem();
                 Family family = new Family();
 
+                //Family choice
                 if (familyrb1.isSelected()){
                     family.earlyRate = 15;
                     family.betweenRate = 0;
@@ -84,14 +97,16 @@ public class GUI {
                 }
 
                 BabySitter babySitter = new BabySitter();
-                int result = babySitter.TotalEarning(start, finish, family);
+                int result = babySitter.totalEarning(start, finish, family);
 
 
+                //Result message
                 JOptionPane.showMessageDialog(null,
                         "your nightly charge is $"+ result +" .",
                         "Result",
                         JOptionPane.OK_OPTION);
 
+                //Cleans the radio buttons
                 buttonGroup.clearSelection();
 
             }
