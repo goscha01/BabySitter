@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="BabySitter:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/BabySitter_jar</output-path>
-    <root id="archive" name="BabySitter.jar">
-      <element id="module-output" name="BabySitter" />
-      <element id="library" level="project" name="BabySitter" />
-    </root>
-  </artifact>
-</component>

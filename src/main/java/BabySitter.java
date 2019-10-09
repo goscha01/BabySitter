@@ -1,3 +1,9 @@
+package main.java;
+
+import main.java.Family;
+import main.java.GUI;
+import main.java.TimeFrame;
+
 public class BabySitter {
 
     //Runs GUI

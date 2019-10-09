@@ -1,10 +1,24 @@
+import main.java.BabySitter;
+import main.java.Family;
+import main.java.GUI;
+import main.java.TimeFrame;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
 import javax.swing.*;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 import static org.junit.Assert.assertArrayEquals;
 
+//@RunWith(Suite.class)
+//@Suite.SuiteClasses({BabySitterTest.class})
+
+
+
 public class BabySitterTest {
+
+
 
     @Test
     public void whenPassAStringArrayIndexReturnsANumberOfStart(){

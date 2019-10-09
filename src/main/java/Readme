@@ -1,0 +1,8 @@
+**Baby Sitter Test Project**
+1. The project was written with a goal of accomplish a test Tsk for Pillar using Test Driving Development.
+2. The Git repository for the project is here https://github.com/goscha01/BabySitter.
+3. The application runs from the BabySitterJar file through an IDE your choice.
+4. The tests can be run from the BabySitterTest file through an IDE your choice.
+5. You can run also a
+5. The project has been built form scratch means the project logic was developing during writing test cases.
+6. Because of 5. you can find a lot of "zomby" code before a cleaning code commit 7b7558fd95ffc7afcf3e384c9f7adf19676ca903

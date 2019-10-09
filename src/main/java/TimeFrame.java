@@ -1,3 +1,5 @@
+package main.java;
+
 import javax.swing.*;
 
 public class TimeFrame {
@@ -10,7 +12,7 @@ public class TimeFrame {
         int j=0;
         while (j< TIME_SPAN_STR.length){
             if (TIME_SPAN_STR[j] == start) {
-                return  j;
+                return  j+1;
             }
             else{
                 j+=1;
@@ -24,7 +26,7 @@ public class TimeFrame {
         int j=0;
         while (j<TIME_SPAN_STR.length){
             if (TIME_SPAN_STR[j] == finish) {
-                return  j;
+                return  j+1;
             }
             else{
                 j+=1;
@@ -53,7 +55,7 @@ public class TimeFrame {
         int arrayLenght = timeFrame.timeCalculationStr(start, finish)+1;
         String[] timeArray = new String[arrayLenght];
         int i=0;
-        int j = startTimeStr(start);
+        int j = startTimeStr(start)-1;
         while (i<arrayLenght) {
             timeArray [i] = TIME_SPAN_STR [j];
             i+=1; j+=1;

@@ -1,3 +1,5 @@
+package main.java;
+
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -24,7 +26,7 @@ public class GUI {
         panel.add(startlbl);
 
         //Builds a dropbox with time values for the start time
-        JComboBox startcb = new JComboBox(TimeFrame.TIME_SPAN_STR);
+        final JComboBox startcb = new JComboBox(TimeFrame.TIME_SPAN_STR);
         panel.add(startcb);
 
         //Puts a label for a finish  time
@@ -32,7 +34,7 @@ public class GUI {
         panel.add(finishlbl);
 
         //Builds a dropbox with time values for the finish time
-        JComboBox finishcb = new JComboBox(TimeFrame.TIME_SPAN_STR);
+        final JComboBox finishcb = new JComboBox(TimeFrame.TIME_SPAN_STR);
         panel.add(finishcb);
 
         //Puts a label for a family
@@ -41,9 +43,9 @@ public class GUI {
 
         //Puts radio buts for a family choise
 
-        JRadioButton familyrb1 = new JRadioButton ("Family 1");
+        final JRadioButton familyrb1 = new JRadioButton ("Family 1");
         familyrb1.setVisible(true);
-        JRadioButton familyrb2 = new JRadioButton ("Family 2");
+        final JRadioButton familyrb2 = new JRadioButton ("Family 2");
         familyrb2.setVisible(true);
         JRadioButton familyrb3 = new JRadioButton ("Family 3");
         familyrb3.setVisible(true);
@@ -52,7 +54,7 @@ public class GUI {
         panel.add(familyrb3);
 
         //Groups radio buttons to be able to clear them
-        ButtonGroup buttonGroup = new ButtonGroup();
+        final ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(familyrb1);
         buttonGroup.add(familyrb2);
         buttonGroup.add(familyrb3);

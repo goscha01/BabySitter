@@ -1,18 +1,20 @@
+package main.java;
+
 public class Family {
 
     //Declares variables of Family classes
-    int earlyRate;
-    int betweenRate;
-    int lateRate;
-    String earlyRateLimit;
-    String lateRateLimit;
+    public int earlyRate;
+    public int betweenRate;
+    public int lateRate;
+    public String earlyRateLimit;
+    public String lateRateLimit;
 
     //Default constructor
     Family(){
     }
 
     //Constructor of Family class
-    Family (int earlyRate, int betweenRate, int lateRate,String earlyRateLimit, String lateRateLimit){
+    public Family(int earlyRate, int betweenRate, int lateRate, String earlyRateLimit, String lateRateLimit){
         this.earlyRate = earlyRate;
         this.betweenRate = betweenRate;
         this.lateRate = lateRate;

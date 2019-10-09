@@ -1,12 +1,10 @@
 <component name="libraryTable">
-  <library name="BabySitter1">
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$" />
-    </CLASSES>
+  <library name="src">
+    <CLASSES />
     <JAVADOC />
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/src" />
       <root url="file://$PROJECT_DIR$/test/src" />
+      <root url="file://$PROJECT_DIR$/src" />
     </SOURCES>
   </library>
 </component>
