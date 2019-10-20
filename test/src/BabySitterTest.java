@@ -11,13 +11,8 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 import static org.junit.Assert.assertArrayEquals;
 
-//@RunWith(Suite.class)
-//@Suite.SuiteClasses({BabySitterTest.class})
-
-
 
 public class BabySitterTest {
-
 
 
     @Test
